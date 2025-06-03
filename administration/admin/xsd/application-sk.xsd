@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+           elementFormDefault="qualified"
+           vc:minVersion="1.1">
+
+  <xs:element name="applications">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="application" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="academic" type="academicType" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="category" type="xs:string" use="required"/>
+            <xs:assert test="if (@category = 'academic') then every $a in academic/personal_info/application_category satisfies $a = 'Academic Scholarship' else true()"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- academic structure -->
+  <xs:complexType name="academicType">
+    <xs:sequence>
+      <xs:element name="personal_info" type="personalInfoType"/>
+      <xs:element name="address_information" type="addressInfoType"/>
+      <xs:element name="school_information" type="schoolInfoType"/>
+      <xs:element name="family_information" type="familyInfoType"/>
+      <xs:element name="educational_information" type="educationalInfoType"/>
+      <xs:element name="requirements" type="requirementsType"/>
+      <xs:element name="date_submitted" type="xs:date"/>
+      <xs:element name="reviewed_by" type="xs:string"/>
+      <xs:element name="date_reviewed" type="xs:date"/>
+      <xs:element name="status" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- personal info -->
+  <xs:complexType name="personalInfoType">
+    <xs:sequence>
+      <xs:element name="application_category" type="xs:string"/>
+      <xs:element name="applicant_id" type="xs:string"/>
+      <xs:element name="affiliation" type="xs:string"/>
+      <xs:element name="type_of_id" type="xs:string"/>
+      <xs:element name="id_number" type="xs:string"/>
+      <xs:element name="gwa" type="xs:decimal"/>
+      <xs:element name="last_name" type="xs:string"/>
+      <xs:element name="middle_name" type="xs:string"/>
+      <xs:element name="first_name" type="xs:string"/>
+      <xs:element name="gender" type="xs:string"/>
+      <xs:element name="date_of_birth" type="xs:date"/>
+      <xs:element name="place_of_birth" type="xs:string"/>
+      <xs:element name="age" type="xs:integer"/>
+      <xs:element name="religion" type="xs:string"/>
+      <xs:element name="civil_status" type="xs:string"/>
+      <xs:element name="mobile_number" type="xs:string"/>
+      <xs:element name="email_address" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- address info -->
+  <xs:complexType name="addressInfoType">
+    <xs:sequence>
+      <xs:element name="unit_number" type="xs:string"/>
+      <xs:element name="house_number" type="xs:string"/>
+      <xs:element name="street_name" type="xs:string"/>
+      <xs:element name="barangay" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- school info -->
+  <xs:complexType name="schoolInfoType">
+    <xs:sequence>
+      <xs:element name="school_year" type="xs:string"/>
+      <xs:element name="semester" type="xs:string"/>
+      <xs:element name="name_of_school" type="xs:string"/>
+      <xs:element name="school_address" type="xs:string"/>
+      <xs:element name="school_type" type="xs:string"/>
+      <xs:element name="academic_grade_level" type="xs:string"/>
+      <xs:element name="academic_level" type="xs:string"/>
+      <xs:element name="course" type="xs:string"/>
+      <xs:element name="expected_date_of_grad" type="xs:date"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- family info -->
+  <xs:complexType name="familyInfoType">
+    <xs:sequence>
+      <xs:element name="family" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="fam_id" type="xs:integer"/>
+            <xs:element name="relation" type="xs:string"/>
+            <xs:element name="first_name" type="xs:string"/>
+            <xs:element name="middle_name" type="xs:string"/>
+            <xs:element name="last_name" type="xs:string"/>
+            <xs:element name="occupation" type="xs:string"/>
+            <xs:element name="monthly_income" type="xs:decimal"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="combined_monthly_income" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- education info -->
+  <xs:complexType name="educationalInfoType">
+    <xs:sequence>
+      <xs:element name="education" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="educ_id" type="xs:integer"/>
+            <xs:element name="academic_level_type" type="xs:string"/>
+            <xs:element name="name_of_school" type="xs:string"/>
+            <xs:element name="inclusive_years" type="xs:string"/>
+            <xs:element name="honors_and_awards" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- requirements -->
+  <xs:complexType name="requirementsType">
+    <xs:sequence>
+      <xs:element name="requirement" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="requirement_id" type="xs:integer"/>
+            <xs:element name="requirement_name" type="xs:string"/>
+            <xs:element name="attachment" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

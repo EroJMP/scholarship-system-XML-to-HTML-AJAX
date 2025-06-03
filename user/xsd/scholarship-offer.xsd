@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xsd:element name="scholarships">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="scholarship" minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="scholarship">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="id" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="title" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="deadline" minOccurs="0" maxOccurs="1"/>
+        <xsd:element ref="availability" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="description" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="eligibility" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="requirements" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="benefits" minOccurs="1" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="id" type="xsd:int"/>
+  <xsd:element name="title" type="xsd:string"/>
+  <xsd:element name="deadline" type="xsd:string"/>
+  <xsd:element name="availability" type="xsd:string"/>
+  <xsd:element name="description" type="xsd:string"/>
+
+  <xsd:element name="requirements">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="item" minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="eligibility">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="item" minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="benefits">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="coverage" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="amount" minOccurs="1" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="item" type="xsd:string"/>
+  <xsd:element name="coverage" type="xsd:string"/>
+  <xsd:element name="amount" type="xsd:string"/>
+
+</xsd:schema>

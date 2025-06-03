@@ -1,0 +1,93 @@
+.content-section {
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    flex: 1;
+  }  
+  .section-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #scholarshipTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  #scholarshipTable th{
+    background-color: #a5c1e9;
+  }
+  #scholarshipTable th,
+  #scholarshipTable td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  #scholarshipTable tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  #scholarshipTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .badge.approved {
+    background-color: #22c55e;
+  }
+  
+  .badge.pending {
+    background-color: orange;
+  }
+  
+  .badge.rejected {
+    background-color: #ef4444;
+  }
+  
+  .hidden-dt-export {
+    display: none !important;
+  }
+
+.btn-custom {
+    background-color: #011F4B;
+    color: white;
+    border: none;
+}
+      
+.btn-custom:hover {
+    background-color: #2c5b9b;
+    color: white;
+}
+
+.search-input {
+    min-width: 400px;
+}
+      
+.export-btn {
+    white-space: nowrap;
+}
+
+.form-select{
+  width: 70%;
+}
+
+.dt-buttons {
+  display: none !important;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}

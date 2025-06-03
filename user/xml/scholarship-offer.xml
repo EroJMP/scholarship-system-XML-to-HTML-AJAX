@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE scholarships SYSTEM "../dtd/scholarship-offer.dtd">
+<scholarships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../xsd/scholarship-offer.xsd">
+  <scholarship>
+    <id>1</id>
+    <title>Academic Scholarship</title>
+    <deadline>2025-05-15</deadline>
+    <availability>close</availability>
+    <description>
+      The Pasig City Merit Scholarship Program provides financial assistance to academically-gifted students residing in Pasig City.
+    </description>
+    <eligibility>
+      <item>Must be a bonafide resident of Pasig City</item>
+      <item>Must have a general weighted average of at least 85%</item>
+      <item>Combined family income must not exceed ₱350,000 annually</item>
+    </eligibility>
+    <requirements>
+      <item>Duly accomplished application form</item>
+      <item>Birth certificate</item>
+      <item>Proof of residency in Pasig City</item>
+      <item>Report card or transcript</item>
+      <item>Certificate of good moral character</item>
+      <item>Two 2x2 ID pictures</item>
+    </requirements>
+    <benefits>
+      <coverage>Full tuition fee coverage, monthly stipend, and book allowance</coverage>
+      <amount>Up to ₱20,000 per academic year</amount>
+    </benefits>
+  </scholarship>
+  <scholarship>
+    <id>2</id>
+    <title>Private School-Endorsed Scholarship</title>
+    <deadline>2025-06-01</deadline>
+    <availability>open</availability>
+    <description>
+      A partnership-based scholarship for students endorsed by accredited private schools in Pasig City.
+    </description>
+    <eligibility>
+      <item>Pasig residents endorsed by partner private schools</item>
+    </eligibility>
+    <requirements>
+      <item>School endorsement letter</item>
+      <item>Academic records</item>
+      <item>Barangay Certificate of Residency</item>
+      <item>Proof of income</item>
+      <item>Essay: "Why do you want to be a scholar of Pasig City?"</item>
+    </requirements>
+    <benefits>
+      <coverage>Partial tuition subsidy and educational supplies support</coverage>
+      <amount>Up to ₱10,000 per academic year</amount>
+    </benefits>
+  </scholarship>
+
+  <scholarship>
+    <id>3</id>
+    <title>Sports Scholarship</title>
+    <deadline>2025-07-10</deadline>
+    <availability>open</availability>
+    <description>
+      A scholarship designed to support student-athletes who have brought honor to the city through sports.
+    </description>
+    <eligibility>
+      <item>Student-athletes with notable achievements</item>
+    </eligibility>
+    <requirements>
+      <item>Proof of athletic achievements</item>
+      <item>Endorsement from sports associations</item>
+      <item>Academic records</item>
+      <item>Barangay Certificate of Residency</item>
+    </requirements>
+    <benefits>
+      <coverage>Tuition assistance, athletic training support, and travel allowances for competitions</coverage>
+      <amount>Up to ₱20,000 per academic year</amount>
+    </benefits>
+  </scholarship>
+
+  <scholarship>
+    <id>4</id>
+    <title>Financial Assistance for Bar &amp; Board Licensure Examinations</title>
+    <deadline>2025-08-10</deadline>
+    <availability>close</availability>
+    <description>
+      Financial aid to help Pasig graduates cover costs related to taking licensure exams.
+    </description>
+    <eligibility>
+      <item>Graduates preparing for licensure exams</item>
+    </eligibility>
+    <requirements>
+      <item>Application form</item>
+      <item>Transcript of Records</item>
+      <item>Certificate of Graduation</item>
+      <item>Notice of Admission from PRC/Supreme Court/MARINA</item>
+      <item>Barangay Certificate of Residency</item>
+    </requirements>
+    <benefits>
+      <coverage>Exam registration fee coverage and review material support</coverage>
+      <amount>Up to ₱5,000 one-time grant</amount>
+    </benefits>
+  </scholarship>
+
+  <scholarship>
+    <id>5</id>
+    <title>Incentives for College Honor Graduates</title>
+    <deadline></deadline>
+    <availability>close</availability>
+    <description>
+      A one-time cash incentive for Pasig scholars who graduate with Latin honors.
+    </description>
+    <eligibility>
+      <item>Pasig City scholars graduating with Latin honors</item>
+    </eligibility>
+    <requirements>
+      <item>Proof of academic honors conferred</item>
+    </requirements>
+    <benefits>
+      <coverage>Cash incentive based on level of honors</coverage>
+      <amount>₱10,000 to ₱30,000 depending on honor level</amount>
+    </benefits>
+  </scholarship>
+
+  <scholarship>
+    <id>6</id>
+    <title>Scholarship for Sangguniang Kabataan Officials</title>
+    <deadline>2025-09-15</deadline>
+    <availability>open</availability>
+    <description>
+      This scholarship supports active SK officials who are continuing their academic journey.
+    </description>
+    <eligibility>
+      <item>Active SK officials pursuing education</item>
+    </eligibility>
+    <requirements>
+      <item>Certification from SK Federation Office</item>
+      <item>Academic records</item>
+    </requirements>
+    <benefits>
+      <coverage>Tuition fee subsidy and leadership training allowance</coverage>
+      <amount>Up to ₱20,000 per academic year</amount>
+    </benefits>
+  </scholarship>
+
+  <scholarship>
+    <id>7</id>
+    <title>Out-of-School Learners Scholarship</title>
+    <deadline></deadline>
+    <availability>open</availability>
+    <description>
+      A program for ALS graduates looking to pursue senior high school or college education.
+    </description>
+    <eligibility>
+      <item>ALS passers seeking further education</item>
+    </eligibility>
+    <requirements>
+      <item>ALS Certificate of Completion</item>
+      <item>Barangay Certificate of Residency</item>
+      <item>Proof of income</item>
+    </requirements>
+    <benefits>
+      <coverage>School supplies, tuition assistance, and monthly stipend</coverage>
+      <amount>Up to ₱5,000 per academic year</amount>
+    </benefits>
+  </scholarship>
+
+  <scholarship>
+    <id>8</id>
+    <title>CHIP-in (Continuing High School Program for Education) Scholarship</title>
+    <deadline></deadline>
+    <availability>open</availability>
+    <description>
+      Helps students who have stopped schooling return and complete their high school education.
+    </description>
+    <eligibility>
+      <item>Students returning to complete high school education</item>
+    </eligibility>
+    <requirements>
+      <item>Application form</item>
+      <item>Report of grades</item>
+      <item>Proof of enrollment</item>
+      <item>Barangay Certificate of Residency</item>
+      <item>Proof of income or Certificate of Indigency</item>
+    </requirements>
+    <benefits>
+      <coverage>Free school materials, daily meal allowance, and uniform subsidy</coverage>
+      <amount>Up to ₱10,000 per academic year</amount>
+    </benefits>
+  </scholarship>
+</scholarships>

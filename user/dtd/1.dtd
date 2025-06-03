@@ -1,0 +1,8 @@
+<!ELEMENT announcements (announcement+)>
+<!ELEMENT announcement (id, type, date, title, subject, content)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT content (#PCDATA)>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administration</title>
+    <link rel="icon" href="../src/favicons/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/nav-header-style.css" />
+    <link rel="stylesheet" href="../css/academic-application.css" />
+    <link rel="stylesheet" href="../css/notification.css" />
+    <style>
+      #exportDropdown, #postDropdown {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 350px;
+        margin-top: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+        max-height: 400px;
+        overflow-y: auto;
+        padding: 10px;
+      }
+      #exportDropdown li a, #postDropdown li a {
+        display: block;
+        padding: 8px 12px 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: normal;
+        font-size: small;
+        border-bottom: 0.5px solid rgb(133, 133, 133);
+      }
+
+      #exportDropdown li a:hover, #postDropdown li a:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="body-pd">
+      <!-- header section -->
+      <header class="header" id="header">
+        <div class="header-title">
+          <img
+            class="header-logo"
+            src="../asset/pasiglogo.png"
+            alt="Pasig Logo"
+          />
+          <h3 class="text-white">Administration</h3>
+        </div>
+        <div class="user-profile">
+          <div class="bell-icon-wrapper position-relative">
+            <i class="bx bxs-bell notif-icon" id="notifBell"></i>
+
+            <!-- Notification Dropdown -->
+            <div id="notifDropdown" class="notifications-dropdown d-none">
+              
+              <!-- Header -->
+              <div class="notif-header">
+                Notifications
+              </div>
+
+              <!-- Notification: Pending Application -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-time"></i></div>
+                <div class="content">
+                  <p class="title">Pending Applications</p>
+                  <p class="message">
+                    The application for <strong>Academic Scholarship</strong> currently has 
+                    <strong class="text-warning fw-bold">21</strong> pending applications. Please review and take action.
+                  </p>
+                  <span class="time">Just now</span>
+                </div>
+              </div>
+
+              <!-- Notification: Account Created -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-user-plus"></i></div>
+                <div class="content">
+                  <p class="title">New Account Created</p>
+                  <p class="message">
+                    A new user account has been created for <strong class="text-primary fw-bold">Jarius Maui Pineda</strong> with the role <strong>Stuff</strong>.
+                  </p>
+                  <span class="time">4h ago</span>
+                </div>
+              </div>
+
+              <!-- Notification: Backup Successful -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-download"></i></div>
+                <div class="content">
+                  <p class="title">System Backup</p>
+                  <p class="message">
+                    The database backup was completed <span class="text-success fw-bold">successfully</span> at 02:00 PM today.
+                  </p>
+                  <span class="time">1h ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-info">
+            <span class="user-name text-white">Admin</span>
+          </div>
+          <div class="user-icon-wrapper">
+            <i class="bx bx-user user-icon"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- navigation section -->
+      <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+          <div>
+            <a href="#" class="nav_logo">
+              <i class="bx bx-menu nav_logo-icon" id="header-toggle"></i>
+            </a>
+            <div class="nav_list">
+              <a href="#" class="nav_link" id="dashboard-link">
+                <i class="bx bx-home nav_icon"></i>
+                <span class="nav_name">Dashboard</span>
+              </a>
+              <a
+                class="nav_link"
+                href="#submenuReport"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="true"
+                aria-controls="submenuReport"
+              >
+                <i class="bx bx-file nav_icon"></i>
+                <span class="nav_name"
+                  >Application <i class="bx bxs-right-arrow"></i
+                ></span>
+              </a>
+              <div class="collapse sub-menu">
+                <a href="#" class="nav_link" id="academic-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Academic Scholarships"
+                    >Academic Scholarships</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="private-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="Private School-Endorsed Scholarship"
+                    >Private School-Endorsed Scholarship</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="sports-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Sports Scholarships"
+                    >Sports Scholarship</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="barboard-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="Financial Assistance for Bar & Board Licensure "
+                    >Financial Assistance for Bar & Board Licensure
+                  </span>
+                </a>
+                <a href="#" class="nav_link" id="honor-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="Incentives for College Honor Graduates"
+                    >Incentives for College Honor Graduates</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="sk-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="Sangguniang Kabataan Officials Scholarship"
+                    >Sangguniang Kabataan Officials Scholarship</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="osl-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title=" Out-of-School Learners Scholarship"
+                    >Out-of-School Learners Scholarship</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="chipin-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="CHIP-in (Continuing High School Program for Education) Scholarship"
+                    >CHIP-in (Continuing High School Program for Education)
+                    Scholarship</span
+                  >
+                </a>
+              </div>
+              <a href="#" id="report-link" class="nav_link active">
+                <i class="bx bxs-report"></i>
+                <span class="nav_name">Report</span>
+              </a>
+              <a href="#" id="settings-link" class="nav_link">
+                <i class="bx bx-cog nav_icon"></i>
+                <span class="nav_name">Settings</span>
+              </a>
+            </div>
+          </div>
+          <a href="#" id="logout-link" class="nav_link">
+            <i class="bx bx-log-out nav_icon"></i>
+            <span class="nav_name">Logout</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- application Section -->
+      <div class="content-section mt-5" id="report"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/nav-header-style.js"></script>
+    <script src="../js/academic-report.js"></script>
+    <script src="../js/notification.js"></script>
+  </body>
+</html>

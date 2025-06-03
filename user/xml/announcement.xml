@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<announcements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="../xsd/announcement.xsd">
+
+  <announcement>
+    <id>1</id>
+    <type>Deadline</type>
+    <date>April 21, 2025</date>
+    <title>Deadline Reminder: College Scholarship Applications</title>
+    <subject>This is a reminder that the deadline for College Scholarship applications is August 15, 2023...</subject>
+    <content>
+      This is a reminder that the deadline for College Scholarship applications is August 15, 2023. 
+      All interested applicants are advised to prepare their requirements ahead of time to avoid delays. 
+      Documents to be submitted include a duly accomplished application form, recent 2x2 ID photo, 
+      latest school ID, certificate of registration or enrollment, and a copy of grades from the previous semester. 
+      Applicants must also provide proof of residency within the city, barangay clearance, and a certificate of indigency if applicable.
+
+      Submission of falsified documents will result in disqualification. 
+      Applications can be submitted online through our official portal or in person at the Office of the City Scholarship Program 
+      located at 2nd Floor, City Hall Annex Building. The office is open from Monday to Friday, 8:00 AM to 5:00 PM. 
+
+      Please ensure that all scanned documents for online submission are clear and legible. 
+      Failure to comply with the requirements or missing documents may delay the processing of your application. 
+      Notification of qualified applicants will be posted on the official website and social media pages. 
+      For inquiries, you may contact (02) 8123-4567 or email scholarships@pasigcity.gov.ph.
+
+      We highly encourage all eligible students to apply and take advantage of this opportunity to receive financial support 
+      for your education. Let us continue working together to ensure access to quality education for all Pasigueños.
+    </content>
+  </announcement>
+
+  <announcement>
+    <id>5</id>
+    <type>Deadline</type>
+    <date>April 21, 2025</date>
+    <title>Deadline Reminder: College Scholarship Applications</title>
+    <subject>This is a reminder that the deadline for College Scholarship applications is August 15, 2023...</subject>
+    <content>
+      This is a reminder that the deadline for College Scholarship applications is August 15, 2023. 
+      All interested applicants are advised to prepare their requirements ahead of time to avoid delays. 
+      Documents to be submitted include a duly accomplished application form, recent 2x2 ID photo, 
+      latest school ID, certificate of registration or enrollment, and a copy of grades from the previous semester. 
+      Applicants must also provide proof of residency within the city, barangay clearance, and a certificate of indigency if applicable.
+
+      Submission of falsified documents will result in disqualification. 
+      Applications can be submitted online through our official portal or in person at the Office of the City Scholarship Program 
+      located at 2nd Floor, City Hall Annex Building. The office is open from Monday to Friday, 8:00 AM to 5:00 PM. 
+
+      Please ensure that all scanned documents for online submission are clear and legible. 
+      Failure to comply with the requirements or missing documents may delay the processing of your application. 
+      Notification of qualified applicants will be posted on the official website and social media pages. 
+      For inquiries, you may contact (02) 8123-4567 or email scholarships@pasigcity.gov.ph.
+
+      We highly encourage all eligible students to apply and take advantage of this opportunity to receive financial support 
+      for your education. Let us continue working together to ensure access to quality education for all Pasigueños.
+    </content>
+  </announcement>
+
+  <announcement>
+    <id>2</id>
+    <type>Event</type>
+    <date>April 19, 2025</date>
+    <title>Scholarship Awarding Ceremony</title>
+    <subject>All approved scholars are invited to attend the Scholarship Awarding Ceremony on September 1, 2023...</subject>
+    <content>
+      All approved scholars are invited to attend the Scholarship Awarding Ceremony on September 1, 2023, at the Pasig City Convention Center. 
+      Registration starts at 8:00 AM and the program will begin at 9:00 AM. Attendees are advised to wear smart casual attire. 
+      The event will be graced by key officials from the City Government and representatives from our partner institutions.
+
+      Scholars will receive their certificates and scholarship cards during the event. Parents or guardians are welcome to attend. 
+      Light snacks and refreshments will be provided. There will also be an orientation on scholarship guidelines, responsibilities of scholars, 
+      and updates on new features in the online portal.
+
+      Attendance is mandatory. Those who cannot attend due to valid reasons are required to coordinate with the scholarship office 
+      at least five working days before the event. Let us celebrate this milestone together as we continue to promote academic excellence 
+      and inclusive opportunities for all Pasigueño scholars.
+    </content>
+  </announcement>
+
+  <announcement>
+    <id>3</id>
+    <type>General</type>
+    <date>April 16, 2025</date>
+    <title>New Educational Assistance Program</title>
+    <subject>The City Government of Pasig is proud to announce a new Educational Assistance Program...</subject>
+    <content>
+      The City Government of Pasig is proud to announce the launch of a new Educational Assistance Program aimed at supporting 
+      students from low-income families. This program will provide financial aid to help cover school-related expenses such as 
+      transportation, school supplies, and internet connectivity.
+
+      Qualified beneficiaries will receive a monthly allowance depending on their level of study—elementary, high school, or college. 
+      Priority will be given to those residing in underserved barangays. Interested applicants must submit proof of income, 
+      a barangay endorsement, a certified copy of grades, and a personal letter of intent explaining how this assistance will help their studies.
+
+      Applications will be accepted starting May 1, 2025. Orientation seminars will be conducted in various barangays to inform families 
+      about the program and how to apply. This initiative reflects our continued commitment to closing the education gap 
+      and ensuring no Pasigueño student is left behind due to financial hardship.
+    </content>
+  </announcement>
+
+  <announcement>
+    <id>4</id>
+    <type>Important</type>
+    <date>April 16, 2025</date>
+    <title>Scholarship Renewal Notice for Ongoing Scholars</title>
+    <subject>The City Government of Pasig is proud to announce a new Educational Assistance Program...</subject>
+    <content>
+      All current scholars are reminded to renew their scholarship status before the upcoming semester. 
+      Renewal requirements include submission of updated grades, current enrollment certificate, and a short performance evaluation 
+      signed by a school official. The deadline for submission is July 31, 2025.
+
+      Scholars must maintain the required General Weighted Average (GWA) to remain eligible. Those who fall below the minimum GWA 
+      will be placed under probation or may lose their scholarship privileges depending on the number of offenses and reasons cited. 
+      Justification letters may be submitted for evaluation in case of special circumstances.
+
+      Renewals may be submitted online or in person. Ensure your documents are complete and accurate to avoid processing delays. 
+      The scholarship office will not accept late or incomplete submissions. Updates on the status of your renewal will be sent via email. 
+      For assistance, please visit our website or call our hotline.
+
+      Let us all remain committed to academic excellence and responsibility. Your performance and dedication make this program 
+      successful for generations to come.
+    </content>
+  </announcement>
+</announcements>

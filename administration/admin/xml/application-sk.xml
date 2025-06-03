@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE applications SYSTEM "../dtd/application-sk.dtd">
+<applications>
+    <application category="sk_officials">
+        <sk_officials>
+            <personal_info>
+                <application_category>SK Scholarship</application_category>
+                <applicant_id>SK-0001</applicant_id>
+                <affiliation>New</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>ESU7891011</id_number>
+                <gwa>1.50</gwa>
+                <last_name>Pineda</last_name>
+                <middle_name>Garcia</middle_name>
+                <first_name>Jarius Maui</first_name>
+                <gender>Male</gender>
+                <date_of_birth>2004-02-28</date_of_birth>
+                <place_of_birth>Quezon City</place_of_birth>
+                <age>21</age>
+                <religion>Christian</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09181234567</mobile_number>
+                <email_address>rafael.lopez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>24B</unit_number>
+                <house_number>1378</house_number>
+                <street_name>Camia Street</street_name>
+                <barangay>San Roque</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>Ace International University</name_of_school>
+                <school_address>456 Kapasigan Blvd, Pasig City</school_address>
+                <school_type>Public</school_type>
+                <academic_grade_level>2nd Year</academic_grade_level>
+                <academic_level>College</academic_level>
+                <course>BA Psychology</course>
+                <expected_date_of_grad>2025-04-30</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Carlos</first_name>
+                    <middle_name>Domingo</middle_name>
+                    <last_name>Lopez</last_name>
+                    <occupation>Driver</occupation>
+                    <monthly_income>20000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Lucia</first_name>
+                    <middle_name>Reyes</middle_name>
+                    <last_name>Lopez</last_name>
+                    <occupation>Vendor</occupation>
+                    <monthly_income>18000</monthly_income>
+                </family>
+                <combined_monthly_income>38000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>Pasig City Elementary School</name_of_school>
+                    <inclusive_years>2009-2013</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>Pasig City High School</name_of_school>
+                    <inclusive_years>2013-2017</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>Pasig City High School</name_of_school>
+                    <inclusive_years>2017-2019</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>4</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>Ace International University</name_of_school>
+                    <inclusive_years>2019-2025</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>lopez_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>intake_form.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>cert_residency.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_rafael.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_rafael.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_1x1_rafael.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_doc.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - Academic</requirement_name>
+                    <attachment>academic_form_rafael.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-02</date_submitted>
+            <reviewed_by>Nicia Perez</reviewed_by>
+            <date_reviewed>2025-04-22</date_reviewed>
+            <status>Approved</status>
+        </sk_officials>
+        <sk_officials>
+            <personal_info>
+                <application_category>SK Scholarship</application_category>
+                <applicant_id>SK-0002</applicant_id>
+                <affiliation>New</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>PASIG7890012</id_number>
+                <gwa>1.75</gwa>
+                <last_name>Castro</last_name>
+                <middle_name>Salazar</middle_name>
+                <first_name>Ana Maria</first_name>
+                <gender>Female</gender>
+                <date_of_birth>2003-08-14</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>22</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09281234567</mobile_number>
+                <email_address>ana.castro@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>17C</unit_number>
+                <house_number>1425</house_number>
+                <street_name>P. Oliveros St.</street_name>
+                <barangay>Barangay Palatiw</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>University of Pasig</name_of_school>
+                <school_address>Edsa Extension, Pasig City</school_address>
+                <school_type>Private</school_type>
+                <academic_grade_level>3rd Year</academic_grade_level>
+                <academic_level>College</academic_level>
+                <course>Bachelor of Science in Business Administration</course>
+                <expected_date_of_grad>2025-04-30</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Antonio</first_name>
+                    <middle_name>Reyes</middle_name>
+                    <last_name>Castro</last_name>
+                    <occupation>Construction Worker</occupation>
+                    <monthly_income>25000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Maria</first_name>
+                    <middle_name>Luisa</middle_name>
+                    <last_name>Castro</last_name>
+                    <occupation>Factory Worker</occupation>
+                    <monthly_income>22000</monthly_income>
+                </family>
+                <combined_monthly_income>47000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>Pasig City Elementary School</name_of_school>
+                    <inclusive_years>2009-2013</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>Pasig City High School</name_of_school>
+                    <inclusive_years>2013-2017</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>Pasig City High School</name_of_school>
+                    <inclusive_years>2017-2019</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>4</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>University of Pasig</name_of_school>
+                    <inclusive_years>2019-2025</inclusive_years>
+                    <honors_and_awards>None</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>castro_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>intake_form_castro.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>cert_residency_castro.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id_castro.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id_castro.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_castro.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_castro.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_castro_1x1.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_proof_castro.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - Academic</requirement_name>
+                    <attachment>academic_form_castro.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-02</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-04-22</date_reviewed>
+            <status>Approved</status>
+        </sk_officials>
+        <sk_officials>
+            <personal_info>
+                <application_category>SK Scholarship</application_category>
+                <applicant_id>SK-0003</applicant_id>
+                <affiliation>Old</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>PASIG7892015</id_number>
+                <gwa>2.00</gwa>
+                <last_name>De La Cruz</last_name>
+                <middle_name>Alvarez</middle_name>
+                <first_name>Marilyn Joy</first_name>
+                <gender>Female</gender>
+                <date_of_birth>2005-07-20</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>19</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09261234567</mobile_number>
+                <email_address>marilyn.delacruz@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>10A</unit_number>
+                <house_number>123</house_number>
+                <street_name>Rizal Avenue</street_name>
+                <barangay>San Isidro</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>Pasig City Senior High School</name_of_school>
+                <school_address>Pasig City</school_address>
+                <school_type>Public</school_type>
+                <academic_grade_level>11th Grade</academic_grade_level>
+                <academic_level>Senior High School</academic_level>
+                <course>ABM</course>
+                <expected_date_of_grad>2025-04-30</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Eduardo</first_name>
+                    <middle_name>Javier</middle_name>
+                    <last_name>De La Cruz</last_name>
+                    <occupation>Construction Worker</occupation>
+                    <monthly_income>18000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Luisa</first_name>
+                    <middle_name>Manalo</middle_name>
+                    <last_name>De La Cruz</last_name>
+                    <occupation>Online Seller</occupation>
+                    <monthly_income>15000</monthly_income>
+                </family>
+                <combined_monthly_income>33000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>Pasig City Elementary School</name_of_school>
+                    <inclusive_years>2011-2015</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>Pasig City High School</name_of_school>
+                    <inclusive_years>2015-2019</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>Pasig City Senior High School</name_of_school>
+                    <inclusive_years>2019-2021</inclusive_years>
+                    <honors_and_awards>None</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>essay_delacruz.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>intake_form_delacruz.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>cert_residency_delacruz.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id_delacruz.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id_delacruz.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_delacruz.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_delacruz.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_delacruz_1x1.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_proof_delacruz.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - Academic</requirement_name>
+                    <attachment>academic_form_delacruz.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-10</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-05-14</date_reviewed>
+            <status>Pending</status>
+        </sk_officials>
+        <sk_officials>
+            <personal_info>
+                <application_category>SK Scholarship</application_category>
+                <applicant_id>SK-0004</applicant_id>
+                <affiliation>New</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>PASIG2023100</id_number>
+                <gwa>1.75</gwa>
+                <last_name>Marquez</last_name>
+                <middle_name>Rodriguez</middle_name>
+                <first_name>Rafael Andres</first_name>
+                <gender>Male</gender>
+                <date_of_birth>2003-04-15</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>22</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09191234567</mobile_number>
+                <email_address>rafael.marquez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>3A</unit_number>
+                <house_number>248</house_number>
+                <street_name>Sumulong Highway</street_name>
+                <barangay>San Juan</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>University of Pasig</name_of_school>
+                <school_address>Pasig City</school_address>
+                <school_type>Public</school_type>
+                <academic_grade_level>2nd Year</academic_grade_level>
+                <academic_level>College</academic_level>
+                <course>BS Information Technology</course>
+                <expected_date_of_grad>2025-04-30</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Antonio</first_name>
+                    <middle_name>De Guzman</middle_name>
+                    <last_name>Marquez</last_name>
+                    <occupation>Construction Foreman</occupation>
+                    <monthly_income>25000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Isabel</first_name>
+                    <middle_name>Lopez</middle_name>
+                    <last_name>Marquez</last_name>
+                    <occupation>Elementary School Teacher</occupation>
+                    <monthly_income>22000</monthly_income>
+                </family>
+                <combined_monthly_income>47000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>Pasig City Elementary School</name_of_school>
+                    <inclusive_years>2009-2013</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>Pasig City High School</name_of_school>
+                    <inclusive_years>2013-2017</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>Pasig City Senior High School</name_of_school>
+                    <inclusive_years>2017-2019</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>4</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>University of Pasig</name_of_school>
+                    <inclusive_years>2019-2023</inclusive_years>
+                    <honors_and_awards>None</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>marquez_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>intake_form_marquez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>cert_residency_marquez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id_marquez.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id_marquez.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_marquez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_marquez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_marquez_1x1.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_proof_marquez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - Academic</requirement_name>
+                    <attachment>academic_form_marquez.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-02</date_submitted>
+            <reviewed_by>Nicia Perez</reviewed_by>
+            <date_reviewed>2025-04-02</date_reviewed>
+            <status>Approved</status>
+        </sk_officials>
+        <sk_officials>
+            <personal_info>
+                <application_category>SK Scholarship</application_category>
+                <applicant_id>SK-0005</applicant_id>
+                <affiliation>New</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>PASIG2023104</id_number>
+                <gwa>84</gwa>
+                <last_name>Gonzalez</last_name>
+                <middle_name>Alvarez</middle_name>
+                <first_name>Ana Maria</first_name>
+                <gender>Female</gender>
+                <date_of_birth>2005-08-19</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>20</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09192223344</mobile_number>
+                <email_address>ana.gonzalez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>7A</unit_number>
+                <house_number>50</house_number>
+                <street_name>Rizal Street</street_name>
+                <barangay>San Isidro</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>Pasig City Senior High School</name_of_school>
+                <school_address>Pasig City</school_address>
+                <school_type>Public</school_type>
+                <academic_grade_level>Grade 12</academic_grade_level>
+                <academic_level>Senior High School</academic_level>
+                <course>ABM</course>
+                <expected_date_of_grad>2025-04-30</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Eduardo</first_name>
+                    <middle_name>Cruz</middle_name>
+                    <last_name>Gonzalez</last_name>
+                    <occupation>Construction Worker</occupation>
+                    <monthly_income>15000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Maria</first_name>
+                    <middle_name>Perez</middle_name>
+                    <last_name>Gonzalez</last_name>
+                    <occupation>Housewife</occupation>
+                    <monthly_income>0</monthly_income>
+                </family>
+                <combined_monthly_income>15000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>Pasig City Elementary School</name_of_school>
+                    <inclusive_years>2011-2015</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>Pasig City High School</name_of_school>
+                    <inclusive_years>2015-2019</inclusive_years>
+                    <honors_and_awards>None</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>Pasig City Senior High School</name_of_school>
+                    <inclusive_years>2019-2021</inclusive_years>
+                    <honors_and_awards>None</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>gonzalez_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>intake_form_gonzalez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>cert_residency_gonzalez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id_gonzalez.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id_gonzalez.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_gonzalez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_gonzalez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_gonzalez_1x1.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_proof_gonzalez.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - Academic</requirement_name>
+                    <attachment>academic_form_gonzalez.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-05</date_submitted>
+            <reviewed_by>Nicia Perez</reviewed_by>
+            <date_reviewed>2025-04-06</date_reviewed>
+            <status>Rejected</status>
+        </sk_officials>
+    </application>
+</applications>

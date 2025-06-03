@@ -1,0 +1,243 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+  
+.navbar-brand strong {
+    color: #1e3a8a !important;
+  }
+
+.announcement-card {
+  background-color: white;
+}
+
+.announcement-card h5 {
+  margin-bottom: 0.5rem;
+}
+
+.announcement-card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.font-color-title{
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.blue-color{
+  color: #5386f5;
+}
+
+.dark-blue-color{
+  color: #1e3a8a;
+  }
+
+.btn.btn-custom {
+  background-color: #1e3a8a !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.show {
+  background-color: #3253ad !important;
+  color: #fff !important;
+  border-color: #3253ad !important;
+}
+
+.btn-outline-custom{
+  color: #1e3a8a;
+  border: 1px solid #1e3a8a;
+}
+
+.btn-outline-custom:hover {
+  background-color: #1e3a8a; 
+  color: white;
+  border: none;
+}
+
+.border-custom{
+  border-color: #8390b3;
+}
+
+/* Tab Navigation */
+.content-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d1b3d;
+  margin: 1.5rem;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}  
+
+.tab-border {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tab-nav {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.tab-nav button {
+  padding: 12px 20px;
+  border: none;
+  background: none;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.tab-nav button.active {
+  border-bottom: 3px solid #0d1b3d;
+  color: #0d1b3d;
+  font-weight: bold;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  color: #000000;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Backup Restore Styles */
+.backup-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+}
+
+.backup-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.backup-section p {
+  margin-bottom: 12px;
+}
+
+button.primary {
+  background-color: #0d1b3d;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Accordion Styles */
+.accordion {
+  border: 1px solid #e2e8f0;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #fff;
+  color: #000000;
+}
+
+.accordion-toggle {
+  width: 100%;
+  padding: 15px;
+  background: #f7f7f7;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accordion-toggle p{
+  font-weight: lighter;
+  color: #333;
+  font-size: 14px;
+}
+
+.accordion-toggle:hover {
+  background: #e9ecef;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+}
+
+.accordion-content .info {
+  margin-bottom: 15px;
+}
+
+.accordion-content .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+  width: 50%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  background-color: #4a90e2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  border: 1px solid #000000;
+  background-color: white;
+  color: #000000;
+}
+
+.actions button:last-child {
+  background-color: #eeebeb;
+  color: #000000;
+}
+
+.actions button:hover {
+  background-color: #ccc;
+  
+}
+
+/* Active Accordion Style */
+.accordion.active .accordion-content {
+  display: block;
+}
+
+.section-height{
+  min-height: 400px;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 9999; /* high enough */
+}

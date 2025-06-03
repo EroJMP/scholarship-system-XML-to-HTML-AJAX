@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+
+  <xsd:element name="announcements">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="announcement" minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="announcement">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="id" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="type" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="date" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="title" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="subject" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="content" minOccurs="1" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="id" type="xsd:integer"/>
+  <xsd:element name="type" type="xsd:string"/>
+  <xsd:element name="date" type="xsd:string"/>
+  <xsd:element name="title" type="xsd:string"/>
+  <xsd:element name="subject" type="xsd:string"/>
+  <xsd:element name="content" type="xsd:string"/>
+
+</xsd:schema>

@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE applications SYSTEM "../dtd/application-osl.dtd">
+<applications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../xsd/application-osl.xsd"> 
+    <application category="out_of_school_learners">
+        <out_of_school_learners>
+            <personal_info>
+                <application_category>OSL Scholarship</application_category>
+                <applicant_id>OSL-0001</applicant_id>
+                <affiliation>New</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>ESU7891011</id_number>
+                <gwa>1.40</gwa>
+                <last_name>Pineda</last_name>
+                <middle_name>Garcia</middle_name>
+                <first_name>Jarius Maui</first_name>
+                <gender>Male</gender>
+                <date_of_birth>2004-02-28</date_of_birth>
+                <place_of_birth>Quezon City</place_of_birth>
+                <age>21</age>
+                <religion>Christian</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09181234567</mobile_number>
+                <email_address>rafael.lopez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>24B</unit_number>
+                <house_number>1378</house_number>
+                <street_name>Camia Street</street_name>
+                <barangay>San Roque</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>New</name_of_school>
+                <school_address>456 Campus Blvd, Sample City</school_address>
+                <school_type>Public</school_type>
+                <academic_grade_level>2nd Year</academic_grade_level>
+                <academic_level>College</academic_level>
+                <course>BA Psychology</course>
+                <expected_date_of_grad>2025-04-30</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Carlos</first_name>
+                    <middle_name>Domingo</middle_name>
+                    <last_name>Lopez</last_name>
+                    <occupation>Driver</occupation>
+                    <monthly_income>20000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Lucia</first_name>
+                    <middle_name>Reyes</middle_name>
+                    <last_name>Lopez</last_name>
+                    <occupation>Vendor</occupation>
+                    <monthly_income>18000</monthly_income>
+                </family>
+                <combined_monthly_income>38000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>San Juan Elementary School</name_of_school>
+                    <inclusive_years>2008-2012</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>San Juan National High School</name_of_school>
+                    <inclusive_years>2012-2016</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>San Juan National High School</name_of_school>
+                    <inclusive_years>2016-2018</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>4</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>University of Pasig</name_of_school>
+                    <inclusive_years>2018-2023</inclusive_years>
+                    <honors_and_awards>None</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>lopez_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>intake_form.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>cert_residency.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_rafael.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_rafael.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_1x1_rafael.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_doc.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - Academic</requirement_name>
+                    <attachment>academic_form_rafael.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-02</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-04-02</date_reviewed>
+            <status>Approved</status>
+        </out_of_school_learners>
+        <out_of_school_learners>
+            <personal_info>
+                <application_category>OSL Scholarship</application_category>
+                <applicant_id>OSL-0002</applicant_id>
+                <affiliation>Old</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>ESU7891013</id_number>
+                <gwa>95</gwa>
+                <last_name>Lopez</last_name>
+                <middle_name>Domingo</middle_name>
+                <first_name>Antonio</first_name>
+                <gender>Male</gender>
+                <date_of_birth>2007-04-19</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>18</age>
+                <religion>Christian</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09181234568</mobile_number>
+                <email_address>antonio.lopez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>12A</unit_number>
+                <house_number>1423</house_number>
+                <street_name>Alabang Street</street_name>
+                <barangay>Barangay San Antonio</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>San Antonio National High School</name_of_school>
+                <school_address>Pasig City</school_address>
+                <school_type>Public</school_type>
+                <academic_grade_level>Grade 9</academic_grade_level>
+                <academic_level>Junior High School</academic_level>
+                <course>N/A</course>
+                <expected_date_of_grad>2025-04-30</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Carlos</first_name>
+                    <middle_name>Domingo</middle_name>
+                    <last_name>Lopez</last_name>
+                    <occupation>Security Guard</occupation>
+                    <monthly_income>25000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Maria</first_name>
+                    <middle_name>Salazar</middle_name>
+                    <last_name>Lopez</last_name>
+                    <occupation>Housewife</occupation>
+                    <monthly_income>15000</monthly_income>
+                </family>
+                <combined_monthly_income>40000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>San Antonio Elementary School</name_of_school>
+                    <inclusive_years>2012-2018</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>San Antonio National High School</name_of_school>
+                    <inclusive_years>2018-2025</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>antonio_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>intake_form_antonio.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert_antonio.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id_antonio.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id_antonio.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_antonio.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_antonio.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_1x1_antonio.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_doc_antonio.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - OSL</requirement_name>
+                    <attachment>osl_form_antonio.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-02</date_submitted>
+            <reviewed_by>Nicia Perez</reviewed_by>
+            <date_reviewed>2025-04-02</date_reviewed>
+            <status>Approved</status>
+        </out_of_school_learners>
+        <out_of_school_learners>
+            <personal_info>
+                <application_category>OSL Scholarship</application_category>
+                <applicant_id>OSL-0003</applicant_id>
+                <affiliation>New</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>ESU7891014</id_number>
+                <gwa>80</gwa>
+                <last_name>Alvarez</last_name>
+                <middle_name>Morales</middle_name>
+                <first_name>Clara Jane</first_name>
+                <gender>Female</gender>
+                <date_of_birth>2005-10-10</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>20</age>
+                <religion>Christian</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09181234569</mobile_number>
+                <email_address>clara.jane.alvarez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>7C</unit_number>
+                <house_number>1024</house_number>
+                <street_name>F. P. Garcia Street</street_name>
+                <barangay>San Juan</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>San Juan Senior High School</name_of_school>
+                <school_address>Pasig City</school_address>
+                <school_type>Public</school_type>
+                <academic_grade_level>Grade 12</academic_grade_level>
+                <academic_level>Senior High School</academic_level>
+                <course>STEM</course>
+                <expected_date_of_grad>2025-04-30</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Antonio</first_name>
+                    <middle_name>Alcaraz</middle_name>
+                    <last_name>Alvarez</last_name>
+                    <occupation>Construction Worker</occupation>
+                    <monthly_income>15000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Rita</first_name>
+                    <middle_name>Campos</middle_name>
+                    <last_name>Alvarez</last_name>
+                    <occupation>Teacher</occupation>
+                    <monthly_income>25000</monthly_income>
+                </family>
+                <combined_monthly_income>40000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>San Juan Elementary School</name_of_school>
+                    <inclusive_years>2011-2017</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>San Juan National High School</name_of_school>
+                    <inclusive_years>2017-2021</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>San Juan Senior High School</name_of_school>
+                    <inclusive_years>2021-2023</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>clara_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>interview_form_clara.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert_clara.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id_clara.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id_clara.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_clara.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_clara.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_1x1_clara.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_doc_clara.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - OSL</requirement_name>
+                    <attachment>osl_form_clara.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-02</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-05-14</date_reviewed>
+            <status>Pending</status>
+        </out_of_school_learners>
+        <out_of_school_learners>
+            <personal_info>
+                <application_category>OSL Scholarship</application_category>
+                <applicant_id>OSL-0004</applicant_id>
+                <affiliation>New</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>ESU7891015</id_number>
+                <gwa>95</gwa>
+                <last_name>Castro</last_name>
+                <middle_name>Villanueva</middle_name>
+                <first_name>Marco Antonio</first_name>
+                <gender>Male</gender>
+                <date_of_birth>2004-05-18</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>21</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09181234568</mobile_number>
+                <email_address>marco.castro@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>15A</unit_number>
+                <house_number>1122</house_number>
+                <street_name>Del Pilar Street</street_name>
+                <barangay>Kapitolyo</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>Pasig City Senior High School</name_of_school>
+                <school_address>Pasig City</school_address>
+                <school_type>Public</school_type>
+                <academic_grade_level>Grade 12</academic_grade_level>
+                <academic_level>Senior High School</academic_level>
+                <course>STEM</course>
+                <expected_date_of_grad>2025-04-15</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Juan</first_name>
+                    <middle_name>Manalo</middle_name>
+                    <last_name>Castro</last_name>
+                    <occupation>Mechanic</occupation>
+                    <monthly_income>25000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Gloria</first_name>
+                    <middle_name>Alvarez</middle_name>
+                    <last_name>Castro</last_name>
+                    <occupation>Housewife</occupation>
+                    <monthly_income>15000</monthly_income>
+                </family>
+                <combined_monthly_income>40000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>Pasig City Elementary School</name_of_school>
+                    <inclusive_years>2010-2014</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>Pasig City National High School</name_of_school>
+                    <inclusive_years>2014-2018</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>Pasig City Senior High School</name_of_school>
+                    <inclusive_years>2018-2020</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>marco_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>interview_form_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id_marco.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id_marco.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_1x1_marco.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_doc_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - OSL</requirement_name>
+                    <attachment>osl_form_marco.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-10</date_submitted>
+            <reviewed_by>Czar Jewel Padrigano</reviewed_by>
+            <date_reviewed>2025-04-10</date_reviewed>
+            <status>Approved</status>
+        </out_of_school_learners>
+        <out_of_school_learners>
+            <personal_info>
+                <application_category>OSL Scholarship</application_category>
+                <applicant_id>OSL-0005</applicant_id>
+                <affiliation>New</affiliation>
+                <type_of_id>School ID</type_of_id>
+                <id_number>ESU7891017</id_number>
+                <gwa>81</gwa>
+                <last_name>Gonzales</last_name>
+                <middle_name>Rivera</middle_name>
+                <first_name>Adrian Luis</first_name>
+                <gender>Male</gender>
+                <date_of_birth>2003-08-20</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>22</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09181234569</mobile_number>
+                <email_address>adrian.gonzales@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>8B</unit_number>
+                <house_number>1210</house_number>
+                <street_name>Quirino Highway</street_name>
+                <barangay>San Juan</barangay>
+            </address_information>
+            <school_information>
+                <school_year>2024-2025</school_year>
+                <semester>1st Semester</semester>
+                <name_of_school>University of Pasig</name_of_school>
+                <school_address>Pasig City</school_address>
+                <school_type>Private</school_type>
+                <academic_grade_level>2nd Year</academic_grade_level>
+                <academic_level>College</academic_level>
+                <course>BS Civil Engineering</course>
+                <expected_date_of_grad>2025-04-15</expected_date_of_grad>
+            </school_information>
+            <family_information>
+                <family>
+                    <fam_id>1</fam_id>
+                    <relation>Father</relation>
+                    <first_name>Rafael</first_name>
+                    <middle_name>Carlos</middle_name>
+                    <last_name>Gonzales</last_name>
+                    <occupation>Engineer</occupation>
+                    <monthly_income>40000</monthly_income>
+                </family>
+                <family>
+                    <fam_id>2</fam_id>
+                    <relation>Mother</relation>
+                    <first_name>Maria</first_name>
+                    <middle_name>Elena</middle_name>
+                    <last_name>Gonzales</last_name>
+                    <occupation>Teacher</occupation>
+                    <monthly_income>30000</monthly_income>
+                </family>
+                <combined_monthly_income>70000</combined_monthly_income>
+            </family_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>Elementary</academic_level_type>
+                    <name_of_school>San Juan Elementary School</name_of_school>
+                    <inclusive_years>2009-2013</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>2</educ_id>
+                    <academic_level_type>Junior High School</academic_level_type>
+                    <name_of_school>San Juan National High School</name_of_school>
+                    <inclusive_years>2013-2017</inclusive_years>
+                    <honors_and_awards>With High Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>3</educ_id>
+                    <academic_level_type>Senior High School</academic_level_type>
+                    <name_of_school>San Juan National High School</name_of_school>
+                    <inclusive_years>2017-2019</inclusive_years>
+                    <honors_and_awards>With Honors</honors_and_awards>
+                </education>
+                <education>
+                    <educ_id>4</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>University of Pasig</name_of_school>
+                    <inclusive_years>2019-2023</inclusive_years>
+                    <honors_and_awards>None</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Essay</requirement_name>
+                    <attachment>adrian_essay.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Interview Intake Form</requirement_name>
+                    <attachment>interview_form_adrian.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert_adrian.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Front of Valid ID</requirement_name>
+                    <attachment>front_id_adrian.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Back of Valid ID</requirement_name>
+                    <attachment>back_id_adrian.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Report Card</requirement_name>
+                    <attachment>report_card_adrian.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>Proof of Enrollment</requirement_name>
+                    <attachment>enrollment_adrian.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_1x1_adrian.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>9</requirement_id>
+                    <requirement_name>Proof of Income</requirement_name>
+                    <attachment>income_doc_adrian.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>10</requirement_id>
+                    <requirement_name>Application Form - OSL</requirement_name>
+                    <attachment>osl_form_adrian.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-15</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-04-15</date_reviewed>
+            <status>Rejected</status>
+        </out_of_school_learners>
+    </application>
+</applications>

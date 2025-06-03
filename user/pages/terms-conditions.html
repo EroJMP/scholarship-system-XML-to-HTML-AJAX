@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms and Conditions - IskolarLink Scholarship Portal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+    <style>
+      :root {
+        --main-blue: #004578;
+        --light-blue: #e9f3fb;
+        --accent-blue: #106ebe;
+        --white: #ffffff;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 180px;
+      }
+
+      body {
+        font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--light-blue);
+        margin: 0;
+      }
+      
+      .footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer-text {
+        line-height: 1.5;
+      }
+
+      .header {
+        background: linear-gradient(
+          90deg,
+          var(--main-blue),
+          var(--accent-blue)
+        );
+        color: white;
+        padding: 30px 40px;
+        border-radius: 0 0 12px 12px;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .header small {
+        opacity: 0.8;
+      }
+
+      .main-section-title {
+  font-size: 2.2rem;
+  color: var(--accent-blue);
+  font-weight: 800;
+  margin-top: -60px;
+  border-bottom: 3px solid var(--accent-blue);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+      .container-section {
+        display: flex;
+        margin: 30px auto;
+        max-width: 1200px;
+        gap: 30px;
+        flex-direction: row;
+        align-items: flex-start;
+        top: 70px;
+      }
+
+      .sidebar-container {
+        position: sticky;
+        top: 70px;
+        align-self: flex-start;
+        height: 500px;
+        width: 300px;
+        overflow-y: auto;
+        margin-left: 0;
+        background: #f8f9fa;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .sidebar {
+        background: transparent;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .sidebar-section {
+        margin-bottom: 1.5rem;
+      }
+
+      .section-title {
+        font-weight: 700;
+        color: var(--main-blue);
+        cursor: default;
+        padding-left: 0.25rem;
+        margin-bottom: 0.5rem;
+        user-select: none;
+      }
+
+      .sidebar-link {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border-radius: 0.375rem;
+        font-weight: 600;
+        color: #212529;
+        text-align: left;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease,
+          box-shadow 0.3s ease;
+        box-shadow: inset 0 0 0 0 transparent;
+        border-left: 4px solid transparent;
+      }
+
+      .sidebar-section .sidebar-link:not(.section-title) {
+        padding-left: 1.5rem;
+        font-weight: 500;
+        font-size: 0.95rem;
+      }
+
+      .sidebar-link:hover {
+        background-color: #e9f5ff;
+        color: #0d6efd;
+        box-shadow: inset 4px 0 0 0 #0d6efd;
+        text-decoration: none;
+      }
+
+      .sidebar-link:active,
+      .sidebar-link.active {
+        background-color: #d0e2ff;
+        color: #084298;
+        font-weight: 700;
+        box-shadow: inset 4px 0 0 0 #084298;
+        border-left-color: #084298;
+      }
+
+      .content {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        flex: 1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+      .last-updated {
+        font-size: 0.85rem;
+        margin-top: 10px;
+        margin-bottom: -30px;
+      }
+
+      h2 {
+        color: var(--main-blue);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 28px;
+      }
+
+      p {
+        line-height: 1.8;
+        color: #333;
+      }
+
+      hr {
+        margin: 40px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-white border-bottom px-4 sticky-top shadow-sm"
+    >
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <div class="d-flex align-items-center">
+          <img
+            src="../asset/logo.png"
+            alt="Logo"
+            class="me-2"
+            style="width: 40px"
+          />
+          <span class="navbar-brand mb-0 h1 me-4 fw-bolder text-primary"
+            ><strong>IskolarLink</strong>Pasig</span
+          >
+          <div class="d-none d-lg-flex gap-3">
+            <a class="nav-link text-primary fw-bold" href="home.html">Home</a>
+            <a class="nav-link text-dark fw-semibold" href="scholarship.html"
+              >Scholarship</a
+            >
+            <a class="nav-link text-dark fw-semibold" href="announcement.html"
+              >Announcement</a
+            >
+            <a class="nav-link text-dark fw-semibold" href="contact.html"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-secondary">Login</button>
+          <button class="btn btn-custom text-white">Register</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-section">
+      <div class="sidebar-container">
+        <nav class="sidebar">
+          <div class="sidebar-section">
+            <div class="section-title">Terms and Conditions</div>
+            <a href="#introduction" class="sidebar-link active">Introduction</a>
+            <a href="#principles" class="sidebar-link">Privacy Principles</a>
+            <a href="#personal-data" class="sidebar-link">Data We Collect</a>
+            <a href="#why-collect" class="sidebar-link"
+              >Purpose of Collection</a
+            >
+          </div>
+          <div class="sidebar-section">
+            <div class="section-title">Data Privacy</div>
+            <a href="#data-privacy" class="sidebar-link"
+              >Data Protection Policy</a
+            >
+            <a href="#children-data" class="sidebar-link">Children's Data</a>
+            <a href="#other-info" class="sidebar-link mb-0"
+              >Additional Privacy Information</a
+            >
+          </div>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div class="last-updated text-end text-muted small mb-1">
+          Last updated: May 17, 2025
+        </div>
+        <section id="introduction">
+        <h1 class="main-section-title">Terms and Conditions</h1>
+          <h2>Introduction</h2>
+          <p>
+            Welcome to IskolarLink, the official scholarship portal of Pasig
+            City. This Terms and Conditions page outlines how we manage your
+            personal information and digital interactions within the platform.
+            At IskolarLink, we uphold the highest standards of transparency,
+            accountability, and lawful data processing, in strict alignment with
+            the Republic Act No. 10173 or the Data Privacy Act of 2012.
+          </p>
+          <p>
+            By accessing or using this portal, users signify their understanding
+            and agreement to the policies described herein. We take the
+            responsibility of protecting your data very seriously, and we
+            encourage every applicant, guardian, and stakeholder to read through
+            these terms carefully.
+          </p>
+        </section>
+        <hr />
+
+        <section id="principles">
+          <h2>Privacy Principles</h2>
+          <p>
+            IskolarLink operates on a set of core privacy principles to guide
+            our data practices. We commit to transparency by clearly informing
+            users about what data is collected and how it is used. Our data
+            collection is always rooted in legitimate, lawful, and justifiable
+            purposes, especially in the context of scholarship applications and
+            administration.
+          </p>
+          <p>
+            We uphold proportionality by collecting only the necessary data
+            relevant to scholarship qualification. Our systems are equipped with
+            technical and organizational safeguards to ensure the security of
+            your information. Lastly, we take full accountability for all data
+            handling processes and are committed to complying with applicable
+            laws and regulations.
+          </p>
+        </section>
+        <hr />
+
+        <section id="personal-data">
+          <h2>Data We Collect</h2>
+          <p>
+            To effectively process and evaluate scholarship applications,
+            IskolarLink collects various categories of personal data. These
+            include your full legal name, date and place of birth, contact
+            details (such as phone number, email address, and home address),
+            academic history, family income, and other socioeconomic indicators.
+            Information regarding your parent or legal guardian may also be
+            collected.
+          </p>
+          <p>
+            Additionally, we may require the upload of supporting documents
+            including government-issued IDs, academic transcripts, barangay
+            certifications, and proofs of residency. Login credentials and
+            activity logs are also generated to ensure portal security and
+            accountability.
+          </p>
+        </section>
+        <hr />
+
+        <section id="why-collect">
+          <h2>Purpose of Collection</h2>
+          <p>
+            The data we collect through IskolarLink serves several essential
+            purposes. Primarily, it enables us to verify applicant eligibility,
+            assess academic performance, and evaluate financial need. These
+            criteria are vital to ensuring that scholarships are awarded fairly
+            and to those who need them most.
+          </p>
+          <p>
+            We also use your data to communicate status updates, generate
+            internal reports for transparency and policy improvement, and comply
+            with government-mandated reporting. Your information helps us design
+            better user experiences and enhances the overall efficiency of the
+            scholarship program.
+          </p>
+        </section>
+        <hr />
+
+        <section id="data-privacy">
+        <h1 class="main-section-title small mb-4 mt-2">Data Privacy</h1>
+          <p>
+            IskolarLink is committed to protecting your personal data in
+            accordance with the Data Privacy Act of 2012. This section outlines
+            our policies and responsibilities when handling sensitive
+            information, particularly with regard to children’s data and other
+            supporting details. We aim to ensure that your data is processed
+            lawfully, securely, and with utmost respect for your rights as a
+            data subject.
+          </p>
+        </section>
+
+        <hr />
+        <section id="children-data">
+          <h2>Children's Data</h2>
+          <p>
+            We recognize the importance of protecting the privacy and data of
+            minors. For applicants below the age of 18, we require verifiable
+            consent from a parent or legal guardian before collecting any
+            information. We implement extra measures to ensure that the personal
+            data of minors is handled with the highest level of care,
+            confidentiality, and legal compliance.
+          </p>
+        </section>
+        <hr />
+
+        <section id="other-info">
+          <h2>Additional Privacy Information</h2>
+          <p>
+            Personal data submitted to IskolarLink is retained only for as long
+            as necessary to fulfill the purpose of collection or as mandated by
+            applicable laws and audit requirements. We do not sell, lease, or
+            use your information for any purpose other than those explicitly
+            stated in this policy.
+          </p>
+          <p>
+            In certain cases, we may share your data with relevant government
+            agencies or authorized personnel strictly for educational,
+            monitoring, or legal purposes. You have the right to access your
+            data, request corrections, restrict certain processing activities,
+            or ask for your data to be deleted — subject to approval and
+            verification.
+          </p>
+          <p>
+            We maintain strong security practices such as encrypted
+            transmissions, secure servers, and access control systems to guard
+            against unauthorized use or disclosure of data. This policy is
+            subject to updates as we continue to improve our platform and comply
+            with new legal frameworks. All revisions will be reflected on this
+            page.
+          </p>
+        </section>
+      </div>
+    </div>
+    <footer class="footer pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="d-flex align-items-center mb-2 g3">
+              <img class="me-2" src="../asset/logo.png" alt="Logo" width="40" />
+              <h5 class="mb-0">
+                <strong
+                  >IskolarLink<span class="blue-color">Pasig</span></strong
+                >
+              </h5>
+            </div>
+            <h6 class="mb-0 footer-text">
+              Empowering Pasig City scholars through a streamlined, transparent
+              scholarship system.
+            </h6>
+          </div>
+          <div class="col-md-3">
+            <h6 class="bold-title">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="scholarship.html">Scholarships</a></li>
+              <li><a href="announcement.html">Announcements</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="bold-title">Resources</h6>
+            <ul class="list-unstyled">
+              <li><a href="resources.html">FAQs</a></li>
+              <li><a href="resources.html">Application Guides</a></li>
+              <li><a href="resources.html">Contact Support</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="bold-title">Contact</h6>
+            <ul class="list-unstyled">
+              <li>Pasig City Scholarship Office</li>
+              <li>Pasig City Hall, Caruncho Ave</li>
+              <li>scholarship@pasigcity.gov.ph</li>
+              <li>(02) 8643-1111</li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between border-top pt-3 mt-4">
+          <h6 class="mb-0 footer-text">
+            © 2025 IskolarLink Pasig. All rights reserved.
+          </h6>
+          <div>
+            <a href="terms-conditions.html" class="me-2">Terms</a> | <a href="terms-conditions.html">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const sidebar = document.querySelector(".sidebar");
+      if (sidebar) {
+        new bootstrap.ScrollSpy(document.querySelector(".content"), {
+          target: ".sidebar",
+          offset: 100,
+        });
+      }
+
+      const offset = 180; 
+      window.addEventListener("scroll", () => {
+        const scrollPos = window.scrollY + offset;
+      });
+    </script>
+  </body>
+</html>

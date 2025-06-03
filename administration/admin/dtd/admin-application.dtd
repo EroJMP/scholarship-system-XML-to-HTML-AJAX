@@ -1,0 +1,62 @@
+<!ELEMENT applications (application+)>
+<!ELEMENT application (category, (academic | college_honor_graduates | bar_and_board | private | out_of_school_learners | sk_officials | chip_in | sports))>
+<!ATTLIST application category IDREF #IMPLIED>
+
+<!ELEMENT academic (personal_info, address_information?, school_information?, family_information?, educational_information?, requirements, date_submitted, reviewed_by, date_reviewed, status)>
+
+<!ELEMENT personal_info (application_category, applicant_id, affiliation?, type_of_id?, id_number?, gwa?, last_name, middle_name?, first_name, gender, date_of_birth, place_of_birth, age, religion, civil_status, mobile_number, email_address)>
+<!ELEMENT address_information (unit_number, house_number, street_name, barangay)>
+<!ELEMENT school_information (school_year, semester, name_of_school, school_address, school_type, academic_grade_level?, academic_level?, course?, expected_date_of_grad?)>
+<!ELEMENT family_information (family+, combined_monthly_income)>
+<!ELEMENT family (fam_id, relation, first_name, middle_name, last_name, occupation, monthly_income)>
+<!ELEMENT educational_information (education+)>
+<!ELEMENT education (educ_id, academic_level_type, name_of_school, inclusive_years, honors_and_awards)>
+<!ELEMENT requirements (requirement+)>
+<!ELEMENT requirement (requirement_id, requirement_name, attachment)>
+
+<!ELEMENT application_category (#PCDATA)>
+<!ELEMENT applicant_id (#PCDATA)>
+<!ELEMENT affiliation (#PCDATA)>
+<!ELEMENT type_of_id (#PCDATA)>
+<!ELEMENT id_number (#PCDATA)>
+<!ELEMENT gwa (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT middle_name (#PCDATA)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT date_of_birth (#PCDATA)>
+<!ELEMENT place_of_birth (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT religion (#PCDATA)>
+<!ELEMENT civil_status (#PCDATA)>
+<!ELEMENT mobile_number (#PCDATA)>
+<!ELEMENT email_address (#PCDATA)>
+<!ELEMENT unit_number (#PCDATA)>
+<!ELEMENT house_number (#PCDATA)>
+<!ELEMENT street_name (#PCDATA)>
+<!ELEMENT barangay (#PCDATA)>
+<!ELEMENT school_year (#PCDATA)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT name_of_school (#PCDATA)>
+<!ELEMENT school_address (#PCDATA)>
+<!ELEMENT school_type (#PCDATA)>
+<!ELEMENT academic_grade_level (#PCDATA)>
+<!ELEMENT academic_level (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT expected_date_of_grad (#PCDATA)>
+<!ELEMENT fam_id (#PCDATA)>
+<!ELEMENT relation (#PCDATA)>
+<!ELEMENT occupation (#PCDATA)>
+<!ELEMENT monthly_income (#PCDATA)>
+<!ELEMENT combined_monthly_income (#PCDATA)>
+<!ELEMENT educ_id (#PCDATA)>
+<!ELEMENT academic_level_type (#PCDATA)>
+<!ELEMENT inclusive_years (#PCDATA)>
+<!ELEMENT honors_and_awards (#PCDATA)>
+<!ELEMENT requirement_id (#PCDATA)>
+<!ELEMENT requirement_name (#PCDATA)>
+<!ELEMENT attachment (#PCDATA)>
+<!ELEMENT date_submitted (#PCDATA)>
+<!ELEMENT reviewed_by (#PCDATA)>
+<!ELEMENT date_reviewed (#PCDATA)>
+<!ELEMENT status (#PCDATA)>

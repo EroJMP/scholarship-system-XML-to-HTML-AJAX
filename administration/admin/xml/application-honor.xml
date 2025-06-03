@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications>
+    <application category="college_honor_graduates">
+        <college_honor_graduates>
+            <graduates_of_baccalaureate_courses>
+                <honors_and_recognition>Academic Honors</honors_and_recognition>
+                <academic_honors>Magna Cum Laude</academic_honors>
+            </graduates_of_baccalaureate_courses>
+            <personal_info>
+                <application_category>Honor Incentives</application_category>
+                <applicant_id>HG-0001</applicant_id>
+                <affiliation>Cum Laude</affiliation>
+                <last_name>Reyes</last_name>
+                <first_name>Juan</first_name>
+                <middle_name>Cruz</middle_name>
+                <gender>Male</gender>
+                <date_of_birth>2001-03-25</date_of_birth>
+                <place_of_birth>Pasig City</place_of_birth>
+                <age>24</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09181234567</mobile_number>
+                <email_address>juan.reyes@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>5A</unit_number>
+                <house_number>789</house_number>
+                <street_name>Mabini Street</street_name>
+                <barangay>Bagong Katipunan</barangay>
+            </address_information>
+            <school_information>
+                <name_of_school>Polytechnic University of the Philippines</name_of_school>
+                <course>BS in Accountancy</course>
+                <date_of_grad>2025-03-15</date_of_grad>
+                <years_scholar>4</years_scholar>
+            </school_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Diploma or Certificate of Honors Received</requirement_name>
+                    <attachment>diploma_certificate.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Digital Copy of Graduation Picture</requirement_name>
+                    <attachment>grad_pic.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Copy of Latest Scholarship Application Form</requirement_name>
+                    <attachment>scholarship_form.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-02</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-04-02</date_reviewed>
+            <status>Approved</status>
+        </college_honor_graduates>
+        <college_honor_graduates>
+            <graduates_of_baccalaureate_courses>
+                <honors_and_recognition>Academic Honors</honors_and_recognition>
+                <academic_honors>Summa Cum Laude</academic_honors>
+            </graduates_of_baccalaureate_courses>
+            <personal_info>
+                <application_category>Honor Incentives</application_category>
+                <applicant_id>HG-0002</applicant_id>
+                <affiliation>Summa Cum Laude</affiliation>
+                <last_name>Morales</last_name>
+                <first_name>Elena</first_name>
+                <middle_name>Gomez</middle_name>
+                <gender>Female</gender>
+                <date_of_birth>2000-07-10</date_of_birth>
+                <place_of_birth>Taguig City</place_of_birth>
+                <age>25</age>
+                <religion>Christian</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09191234567</mobile_number>
+                <email_address>elena.morales@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>12C</unit_number>
+                <house_number>1568</house_number>
+                <street_name>Rizal Avenue</street_name>
+                <barangay>North Signal Village</barangay>
+            </address_information>
+            <school_information>
+                <name_of_school>University of Santo Tomas</name_of_school>
+                <course>BS in Mechanical Engineering</course>
+                <date_of_grad>2025-04-30</date_of_grad>
+                <years_scholar>4</years_scholar>
+            </school_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Diploma or Certificate of Honors Received</requirement_name>
+                    <attachment>summa_diploma.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Digital Copy of Graduation Picture</requirement_name>
+                    <attachment>summa_grad_pic.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Copy of Latest Scholarship Application Form</requirement_name>
+                    <attachment>scholarship_form_elena.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-03</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-05-14</date_reviewed>
+            <status>Pending</status>
+        </college_honor_graduates>
+        <college_honor_graduates>
+            <graduates_of_baccalaureate_courses>
+                <honors_and_recognition>Academic Honors</honors_and_recognition>
+                <academic_honors>Cum Laude</academic_honors>
+            </graduates_of_baccalaureate_courses>
+            <personal_info>
+                <application_category>Honor Incentives</application_category>
+                <applicant_id>HG-0003</applicant_id>
+                <affiliation>Cum Laude</affiliation>
+                <last_name>Gutierrez</last_name>
+                <first_name>Marco Antonio</first_name>
+                <middle_name>Santos</middle_name>
+                <gender>Male</gender>
+                <date_of_birth>2001-01-05</date_of_birth>
+                <place_of_birth>Quezon City</place_of_birth>
+                <age>24</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09182345678</mobile_number>
+                <email_address>marco.gutierrez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>10B</unit_number>
+                <house_number>347</house_number>
+                <street_name>Del Pilar Street</street_name>
+                <barangay>San Juan</barangay>
+            </address_information>
+            <school_information>
+                <name_of_school>Ateneo de Manila University</name_of_school>
+                <course>BS in Management Engineering</course>
+                <date_of_grad>2025-05-30</date_of_grad>
+                <years_scholar>4</years_scholar>
+            </school_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Diploma or Certificate of Honors Received</requirement_name>
+                    <attachment>cumlaude_diploma.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Digital Copy of Graduation Picture</requirement_name>
+                    <attachment>cumlaude_grad_pic.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Copy of Latest Scholarship Application Form</requirement_name>
+                    <attachment>scholarship_form_marco.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-05</date_submitted>
+            <reviewed_by>Nicia Perez</reviewed_by>
+            <date_reviewed>2025-04-05</date_reviewed>
+            <status>Rejected</status>
+        </college_honor_graduates>
+        <college_honor_graduates>
+            <graduates_of_baccalaureate_courses>
+                <honors_and_recognition>Academic Honors</honors_and_recognition>
+                <academic_honors>Magna Cum Laude</academic_honors>
+            </graduates_of_baccalaureate_courses>
+            <personal_info>
+                <application_category>Honor Incentives</application_category>
+                <applicant_id>HG-0004</applicant_id>
+                <affiliation>Magna Cum Laude</affiliation>
+                <last_name>Fernandez</last_name>
+                <first_name>Isabel Marisa</first_name>
+                <middle_name>Navarro</middle_name>
+                <gender>Female</gender>
+                <date_of_birth>2000-12-15</date_of_birth>
+                <place_of_birth>Taguig City</place_of_birth>
+                <age>24</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09184567890</mobile_number>
+                <email_address>isabel.fernandez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>8C</unit_number>
+                <house_number>1250</house_number>
+                <street_name>Vito Cruz Extension</street_name>
+                <barangay>San Antonio</barangay>
+            </address_information>
+            <school_information>
+                <name_of_school>University of Santo Tomas</name_of_school>
+                <course>BS in Civil Engineering</course>
+                <date_of_grad>2025-05-25</date_of_grad>
+                <years_scholar>4</years_scholar>
+            </school_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Diploma or Certificate of Honors Received</requirement_name>
+                    <attachment>magna_diploma.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Digital Copy of Graduation Picture</requirement_name>
+                    <attachment>magna_grad_pic.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Copy of Latest Scholarship Application Form</requirement_name>
+                    <attachment>scholarship_form_isabel.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-06</date_submitted>
+            <reviewed_by>Nicia Perez</reviewed_by>
+            <date_reviewed>2025-04-06</date_reviewed>
+            <status>Approved</status>
+        </college_honor_graduates>
+        <college_honor_graduates>
+            <graduates_of_baccalaureate_courses>
+                <honors_and_recognition>Academic Honors</honors_and_recognition>
+                <academic_honors>Summa Cum Laude</academic_honors>
+            </graduates_of_baccalaureate_courses>
+            <personal_info>
+                <application_category>Honor Incentives</application_category>
+                <applicant_id>HG-0005</applicant_id>
+                <affiliation>Summa Cum Laude</affiliation>
+                <last_name>Lopez</last_name>
+                <first_name>Antonio Marco</first_name>
+                <middle_name>Santos</middle_name>
+                <gender>Male</gender>
+                <date_of_birth>1999-08-03</date_of_birth>
+                <place_of_birth>Quezon City</place_of_birth>
+                <age>26</age>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09191234567</mobile_number>
+                <email_address>antonio.lopez@example.com</email_address>
+            </personal_info>
+            <address_information>
+                <unit_number>12D</unit_number>
+                <house_number>450</house_number>
+                <street_name>Rizal Avenue</street_name>
+                <barangay>San Juan</barangay>
+            </address_information>
+            <school_information>
+                <name_of_school>Ateneo de Manila University</name_of_school>
+                <course>BA in Political Science</course>
+                <date_of_grad>2025-06-15</date_of_grad>
+                <years_scholar>4</years_scholar>
+            </school_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Diploma or Certificate of Honors Received</requirement_name>
+                    <attachment>summa_diploma.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Digital Copy of Graduation Picture</requirement_name>
+                    <attachment>summa_grad_pic.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Copy of Latest Scholarship Application Form</requirement_name>
+                    <attachment>scholarship_form_antonio.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-10</date_submitted>
+            <reviewed_by>Czar Jewel Padrigano</reviewed_by>
+            <date_reviewed>2025-04-10</date_reviewed>
+            <status>Approved</status>
+        </college_honor_graduates>
+    </application>
+</applications>

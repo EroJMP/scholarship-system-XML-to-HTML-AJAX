@@ -1,0 +1,35 @@
+.list-group{
+  font-size: 0.95rem;
+}
+
+.card-title{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #07377C;
+}
+
+.section-title{
+  color:#011F4B;
+}
+
+.btn-custom {
+background-color: #011F4B;
+color: white;
+border: none;
+}
+  
+.btn-custom:hover {
+background-color: #07377C;
+color: white;
+}
+
+.list-group a{
+  color: #011F4B;
+}
+
+#statusPieChart + div .legend {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}

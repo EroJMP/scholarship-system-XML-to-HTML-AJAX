@@ -1,0 +1,52 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('../asset/login-bg.png') no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+}
+
+#emailSection, #verificationSection, #newPassSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #F3F5F7;
+}
+
+.logo-container {
+text-align: center;
+margin-bottom: 1.5rem;
+}
+.logo-container img {
+height: 120px;
+}
+.form-control{
+    background-color: #E6E6E6;
+    height: 50px;
+}
+
+.form-control:focus {
+box-shadow: none;
+border-color: #0d6efd;
+}
+.btn-primary {
+width: 100%;
+border-radius: 10px;
+}
+.text-small {
+font-size: 0.875rem;
+}
+.form-check-input:focus {
+box-shadow: none;
+}
+

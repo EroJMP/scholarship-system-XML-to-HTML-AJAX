@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Announcements | IskolarLink Pasig</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/academic-apply.css">
+</head>
+<body>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom px-4 sticky-top shadow-sm">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+            <img src="../asset/logo.png" alt="Logo" class="me-2" style="width: 40px;">
+            <span class="navbar-brand mb-0 h1 me-4 fw-bolder text-primary"><strong>IskolarLink</strong>Pasig</span>
+            <div class="d-none d-lg-flex gap-3">
+                <a class="nav-link text-dark fw-semibold" href="home.html">Home</a>
+                <a class="nav-link text-dark fw-semibold" href="scholarship.html">Scholarship</a>
+                <a class="nav-link text-dark fw-semibold" href="announcement.html">Announcement</a>
+                <a class="nav-link text-dark fw-semibold" href="contact.html">Contact</a>
+            </div>
+            </div>
+
+            <div class="dropdown">
+                <button
+                    class="btn btn-custom rounded-circle d-flex justify-content-center align-items-center"
+                    style="width: 40px; height: 40px; font-weight: bold; font-size: 1rem; user-select: none;"
+                    id="userProfileBtn"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    JP
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userProfileBtn" style="min-width: 180px;">
+                    <li><a class="dropdown-item" href="user-dashboard.html">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="user-scholarship.html">Scholarships</a></li>
+                    <li><a class="dropdown-item" href="user-account-settings.html">Account Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="home.html" id="logoutBtn">Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="content-section" id="applicationDetails">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="section-title fw-bold fs-2 font-color-title mb-0">Confirm Application</h2>
+            </div>
+            <p class="text-muted mb-4">Please review all the details before submitting your application.</p>
+
+            <div class="bg-white p-4 rounded shadow-lg border-top border-primary">
+
+                <!-- Personal Info -->
+                <h4 class="fw-bold mt-3 mb-3 border-bottom border-primary">Personal Information</h4>
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Application Category:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-application-category" disabled value="Academic Application"/>
+                        <button type="button" class="btn btn-white text-white btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Applicant ID:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-applicant-id" disabled value="2025021"/>
+                        <button type="button" class="btn btn-white text-white btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Affiliation:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-affiliation" disabled value="New"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Type of ID:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-type-of-id" disabled value="School ID"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>ID Number:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-id-number" disabled value="22-00710"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>GWA:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-gwa" disabled value="1.5"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Last Name:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-full-name" disabled value="Pineda"/>
+                        <button type="button" class="btn btn-white text-white btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>First Name:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-full-name" disabled value="Jarius Maui"/>
+                        <button type="button" class="btn btn-white text-white btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Middle Name:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-full-name" disabled value="Amar"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Gender:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-gender" disabled value="Male"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Date of Birth:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="date" class="form-control me-2" id="input-date-of-birth" disabled value="2002-03-05"/>
+                        <button type="button" class="btn btn-white text-white btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Place of Birth:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-place-of-birth" disabled value="Manila"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Age:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="number" class="form-control me-2" id="input-age" disabled value="23"/>
+                        <button type="button" class="btn btn-white text-white btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Religion:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-religion" disabled value="Roman Catholic"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Civil Status:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-civil-status" disabled value="Single"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Mobile Number:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="tel" class="form-control me-2" id="input-mobile-number" disabled value="09617078331"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Email Address:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="email" class="form-control me-2" id="input-email-address" disabled value="pineda_jariusmauI@plpasig.edu"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <h4 class="fw-bold mt-4">Address Information</h4>
+                    <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Unit Number:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-unit-number" disabled value="n/a"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>House Number:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-house-number" disabled value="962"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Street Name:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-street-name" disabled value="Labanos"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Barangay:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-barangay" disabled value="Manggahan"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <h4 class="fw-bold mt-4">School Information</h4>
+                    <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <label><strong>School Year:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-school-year" disabled value="2024-2025"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Semester:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-semester" disabled value="2nd Semester"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Name of School:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-program" disabled value="Pamantasan ng Lungsod ng Pasig"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>School Address:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-course" disabled value="Alcalde Jose, Pasig City"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>School Type:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-course" disabled value="Public"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Academic Grade Level:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-course" disabled value="3rd Year"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Acadeic Level:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-course" disabled value="College"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Course:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-course" disabled value="BSIT"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <label><strong>Expected Date of Graduation:</strong></label>
+                        <div class="d-flex align-items-center">
+                        <input type="text" class="form-control me-2" id="input-course" disabled value="2025-05-24"/>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <!-- Family Info -->
+                <h4 class="fw-bold mt-4">Family Information</h4>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                    <tr>
+                        <th>Relation</th>
+                        <th>First Name</th>
+                        <th>Middle Name</th>
+                        <th>Last Name</th>
+                        <th>Occupation</th>
+                        <th>Monthly Income</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="family-info-body">
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Mother"</td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Maricel"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Amar"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Pineda"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Housewife"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="₱0"></td>
+                        <td>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Father"</td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Euwin"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Flores"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Pineda"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Software Engineer"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="₱65000"></td>
+                        <td>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="col-md-6 mb-2">
+                    <p><strong>Combined Monthly Income:</strong> ₱65000</p>
+                </div>
+                </div>
+
+                <!-- Educational Background -->
+                <h4 class="fw-bold mt-4">Educational Background</h4>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                    <tr>
+                        <th>Academic Level Type</th>
+                        <th>Name of School</th>
+                        <th>Inclusive Years</th>
+                        <th>Honors and Awards</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="educ-info-body">
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Elementary"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Manggahan Elementary School"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="2010-2016"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="N/A"></td>
+                        <td>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Junior High School"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Manggahan High School"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="2016-2020"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="With Honors"></td>
+                        <td>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Senior High School"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Arellano University"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="2020-2022"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="With Honors"></td>
+                        <td>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="College"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Pamantasan ng Lungsod ng Pasig"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="2022-2025"></td>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="With Honors"></td>
+                        <td>
+                        <button type="button" class="btn btn-outline-primary btn-sm toggle-edit">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <!-- Requirements -->
+                <h4 class="fw-bold mt-4">Requirements</h4>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                    <tr>
+                        <th>Requirement Name</th>
+                        <th>Attachment</th>1
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="requirements-body">
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Essay"></td>
+                        <td>
+                            <a href="../asset/essay.pdf" target="_blank" class="text-dark">essay.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Interview Intake Form<"></td>
+                        <td>
+                            <a href="../asset/interview_form.pdf" target="_blank" class="text-dark">interview_form.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Barangay Certification of Residency"></td>
+                        <td>
+                            <a href="../asset/brgy_cert.pdf" target="_blank" class="text-dark">brgy_cert.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Front of Valid ID"></td>
+                        <td>
+                            <a href="../asset/front_id.pdf" target="_blank" class="text-dark">front_id.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Back of Valid ID"></td>
+                        <td>
+                            <a href="../asset/back_id.pdf" target="_blank" class="text-dark">back_id.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Report Card"></td>
+                        <td>
+                            <a href="../asset/report_card.pdf" target="_blank" class="text-dark">report_card.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Proof of Enrollment"></td>
+                        <td>
+                            <a href="../asset/brgy_cert.pdf" target="_blank" class="text-dark">proof_enrollment.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="1x1 Photo"></td>
+                        <td>
+                            <a href="../asset/1x1.pdf" target="_blank" class="text-dark">1x1.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Proof of Income"></td>
+                        <td>
+                            <a href="../asset/proof_income.pdf" target="_blank" class="text-dark">proof_income.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-sm" disabled value="Application Form"></td>
+                        <td>
+                            <a href="../asset/interview_form.pdf" target="_blank" class="text-dark">application.pdf</a>
+                        </td>
+                        <td>
+                            <input type="file" style="display: none;" accept=".pdf" class="hidden-file-input">
+                            <button type="button" class="btn btn-outline-primary btn-sm open-file-btn">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+                <button id="submitButton" class="btn btn-custom">
+                    <i class="bi bi-send"></i> Submit
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center mb-2 g3"> 
+                        <img class="me-2" src="../asset/logo.png" alt="Logo" width="40">
+                        <h5 class="mb-0"><strong>IskolarLink<span class="blue-color">Pasig</span></strong></h5>
+                    </div>
+                    <p>Empowering Pasig City scholars through a streamlined, transparent scholarship system.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="bold-title">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="scholarship.html">Scholarships</a></li>
+                        <li><a href="announcement.html">Announcements</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="bold-title" >Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="resources.html">FAQs</a></li>
+                        <li><a href="resources.html">Application Guides</a></li>
+                        <li><a href="resources.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="bold-title" >Contact</h6>
+                    <ul class="list-unstyled">
+                        <li>Pasig City Scholarship Office</li>
+                        <li>Pasig City Hall, Caruncho Ave</li>
+                        <li>scholarship@pasigcity.gov.ph</li>
+                        <li>(02) 8643-1111</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between border-top pt-3 mt-4">
+                <p class="mb-0">© 2025 IskolarLink Pasig. All rights reserved.</p>
+                <div>
+                    <a href="terms-conditions.html" class="me-2">Terms</a> | <a href="terms-conditions.html">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/scholarship.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/academic-apply-detail.js"></script>
+</body>
+</html>

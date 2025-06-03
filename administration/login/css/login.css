@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(to right, #1a2a4e, #031049, #1a2a4e); /* Blue gradient */
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+.login-container {
+  width: 80%;
+  height: 90vh;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.login-image {
+  background: url('../asset/sidepicture.png') no-repeat center;
+  background-size: cover;
+  flex: 1.20;
+}
+.login-form, .verification-form {
+  flex: .80;
+  background-color: #f4f5f7;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 70%;
+  margin-bottom: 1rem;
+}
+.divider {
+  width: 100%;
+  border-top: 2px solid #ccc;
+  margin: 1rem 0;
+}

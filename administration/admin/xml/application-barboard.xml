@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications>
+    <application category="bar_and_board">
+        <bar_and_board>
+            <personal_info>
+                <application_category>Bar and Board Assistance</application_category>
+                <applicant_id>BB-0001</applicant_id>
+                <last_name>Perez</last_name>
+                <first_name>Tricia Nichole</first_name>
+                <middle_name>Rojo</middle_name>
+                <gender>Female</gender>
+                <date_of_birth>1998-05-12</date_of_birth>
+                <age>27</age>
+                <place_of_birth>Pasig City</place_of_birth>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09171234567</mobile_number>
+                <email_address>maria.santos@example.com</email_address>
+                <is_scholar>Yes</is_scholar>
+            </personal_info>
+            <address_information>
+                <unit_number>3B</unit_number>
+                <house_number>456</house_number>
+                <street_name>Bonifacio St.</street_name>
+                <barangay>San Miguel</barangay>
+                <years_living_in_pasig>22</years_living_in_pasig>
+            </address_information>
+            <college_school_information>
+                <name_of_school>University of the Philippines</name_of_school>
+                <school_address>Diliman, Quezon City</school_address>
+                <course>BA in Arts and Design</course>
+                <date_of_graduation>2024-06-30</date_of_graduation>
+                <licensure_exam_to_take>Philippine Bar Examination</licensure_exam_to_take>
+                <date_of_bar_exam>2025-09-01</date_of_bar_exam>
+            </college_school_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>University of the Philippines</name_of_school>
+                    <inclusive_years>2020-2024</inclusive_years>
+                    <honors_and_awards>Cum Laude</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Transcript of Record</requirement_name>
+                    <attachment>transcript.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Official Certificate of Graduation or Diploma</requirement_name>
+                    <attachment>diploma.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Endorsement Letter from the College Dean</requirement_name>
+                    <attachment>dean_letter.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Certificate of Good Moral Character</requirement_name>
+                    <attachment>good_moral.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Notice of Admission (NOA) issued by PRC / Supreme Court</requirement_name>
+                    <attachment>noa.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>Application Form</requirement_name>
+                    <attachment>application_form.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-02</date_submitted>
+            <reviewed_by>Czar Jewel Padrigano</reviewed_by>
+            <date_reviewed>2025-04-02</date_reviewed>
+            <status>Approved</status>
+        </bar_and_board>
+        <bar_and_board>
+            <personal_info>
+                <application_category>Bar and Board Assistance</application_category>
+                <applicant_id>BB-0002</applicant_id>
+                <last_name>Gonzales</last_name>
+                <first_name>Marco Antonio</first_name>
+                <middle_name>Delos Santos</middle_name>
+                <gender>Male</gender>
+                <date_of_birth>1997-11-25</date_of_birth>
+                <age>28</age>
+                <place_of_birth>Pasig City</place_of_birth>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09178901234</mobile_number>
+                <email_address>marco.gonzales@example.com</email_address>
+                <is_scholar>Yes</is_scholar>
+            </personal_info>
+            <address_information>
+                <unit_number>12A</unit_number>
+                <house_number>789</house_number>
+                <street_name>Alabang-Zapote Road</street_name>
+                <barangay>Maybunga</barangay>
+                <years_living_in_pasig>15</years_living_in_pasig>
+            </address_information>
+            <college_school_information>
+                <name_of_school>San Beda University</name_of_school>
+                <school_address>Mendiola, Pasig</school_address>
+                <course>BS in Nursing</course>
+                <date_of_graduation>2024-03-25</date_of_graduation>
+                <licensure_exam_to_take>Philippine Bar Examination</licensure_exam_to_take>
+                <date_of_bar_exam>2025-09-01</date_of_bar_exam>
+            </college_school_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>San Beda University</name_of_school>
+                    <inclusive_years>2020-2024</inclusive_years>
+                    <honors_and_awards>None</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Transcript of Record</requirement_name>
+                    <attachment>transcript_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Official Certificate of Graduation or Diploma</requirement_name>
+                    <attachment>diploma_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Endorsement Letter from the College Dean</requirement_name>
+                    <attachment>dean_letter_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Certificate of Good Moral Character</requirement_name>
+                    <attachment>good_moral_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Notice of Admission (NOA) issued by PRC / Supreme Court</requirement_name>
+                    <attachment>noa_marco.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_marco.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>Application Form</requirement_name>
+                    <attachment>application_form_marco.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-10</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-04-10</date_reviewed>
+            <status>Rejected</status>
+        </bar_and_board>
+        <bar_and_board>
+            <personal_info>
+                <application_category>Bar and Board Assistance</application_category>
+                <applicant_id>BB-0003</applicant_id>
+                <last_name>Alvarez</last_name>
+                <first_name>Isabelle Marie</first_name>
+                <middle_name>Suarez</middle_name>
+                <gender>Female</gender>
+                <date_of_birth>1999-04-18</date_of_birth>
+                <age>26</age>
+                <place_of_birth>Pasig City</place_of_birth>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09179876543</mobile_number>
+                <email_address>isabelle.alvarez@example.com</email_address>
+                <is_scholar>No</is_scholar>
+            </personal_info>
+            <address_information>
+                <unit_number>8C</unit_number>
+                <house_number>456</house_number>
+                <street_name>Sumulong Highway</street_name>
+                <barangay>San Juan</barangay>
+                <years_living_in_pasig>18</years_living_in_pasig>
+            </address_information>
+            <college_school_information>
+                <name_of_school>Ateneo de Manila University</name_of_school>
+                <school_address>Katipunan Ave., Quezon City</school_address>
+                <course>BS in Architecture</course>
+                <date_of_graduation>2024-05-15</date_of_graduation>
+                <licensure_exam_to_take>Philippine Bar Examination</licensure_exam_to_take>
+                <date_of_bar_exam>2025-09-01</date_of_bar_exam>
+            </college_school_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>Ateneo de Manila University</name_of_school>
+                    <inclusive_years>2020-2024</inclusive_years>
+                    <honors_and_awards>Magna Cum Laude</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Transcript of Record</requirement_name>
+                    <attachment>transcript_isabelle.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Official Certificate of Graduation or Diploma</requirement_name>
+                    <attachment>diploma_isabelle.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Endorsement Letter from the College Dean</requirement_name>
+                    <attachment>dean_letter_isabelle.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Certificate of Good Moral Character</requirement_name>
+                    <attachment>good_moral_isabelle.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert_isabelle.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Notice of Admission (NOA) issued by PRC / Supreme Court</requirement_name>
+                    <attachment>noa_isabelle.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_isabelle.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>Application Form</requirement_name>
+                    <attachment>application_form_isabelle.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-12</date_submitted>
+            <reviewed_by>Jarius Maui Pineda</reviewed_by>
+            <date_reviewed>2025-05-14</date_reviewed>
+            <status>Pending</status>
+        </bar_and_board>
+        <bar_and_board>
+            <personal_info>
+                <application_category>Bar and Board Assistance</application_category>
+                <applicant_id>BB-0004</applicant_id>
+                <last_name>Cruz</last_name>
+                <first_name>Jose Maria</first_name>
+                <middle_name>Lopez</middle_name>
+                <gender>Male</gender>
+                <date_of_birth>1997-11-25</date_of_birth>
+                <age>28</age>
+                <place_of_birth>Pasig City</place_of_birth>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09172345678</mobile_number>
+                <email_address>jose.cruz@example.com</email_address>
+                <is_scholar>Yes</is_scholar>
+            </personal_info>
+            <address_information>
+                <unit_number>10A</unit_number>
+                <house_number>789</house_number>
+                <street_name>Sta. Rosa Street</street_name>
+                <barangay>San Antonio</barangay>
+                <years_living_in_pasig>25</years_living_in_pasig>
+            </address_information>
+            <college_school_information>
+                <name_of_school>Mapua University</name_of_school>
+                <school_address>Circle, Taguig</school_address>
+                <course>BS in Civil Engineering</course>
+                <date_of_graduation>2024-06-15</date_of_graduation>
+                <licensure_exam_to_take>Philippine Bar Examination</licensure_exam_to_take>
+                <date_of_bar_exam>2025-09-01</date_of_bar_exam>
+            </college_school_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>Mapua University</name_of_school>
+                    <inclusive_years>2020-2024</inclusive_years>
+                    <honors_and_awards>Cum Laude</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Transcript of Record</requirement_name>
+                    <attachment>transcript_jose.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Official Certificate of Graduation or Diploma</requirement_name>
+                    <attachment>diploma_jose.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Endorsement Letter from the College Dean</requirement_name>
+                    <attachment>dean_letter_jose.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Certificate of Good Moral Character</requirement_name>
+                    <attachment>good_moral_jose.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert_jose.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Notice of Admission (NOA) issued by PRC / Supreme Court</requirement_name>
+                    <attachment>noa_jose.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_jose.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>Application Form</requirement_name>
+                    <attachment>application_form_jose.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-15</date_submitted>
+            <reviewed_by>Nicia Perez</reviewed_by>
+            <date_reviewed>2025-04-15</date_reviewed>
+            <status>Approved</status>
+        </bar_and_board>
+        <bar_and_board>
+            <personal_info>
+                <application_category>Bar and Board Assistance</application_category>
+                <applicant_id>BB-0005</applicant_id>
+                <last_name>Santos</last_name>
+                <first_name>Isabel Grace</first_name>
+                <middle_name>Alvarez</middle_name>
+                <gender>Female</gender>
+                <date_of_birth>1997-02-19</date_of_birth>
+                <age>28</age>
+                <place_of_birth>Pasig City</place_of_birth>
+                <religion>Roman Catholic</religion>
+                <civil_status>Single</civil_status>
+                <mobile_number>09173345678</mobile_number>
+                <email_address>isabel.santos@example.com</email_address>
+                <is_scholar>Yes</is_scholar>
+            </personal_info>
+            <address_information>
+                <unit_number>8D</unit_number>
+                <house_number>1234</house_number>
+                <street_name>Libertad Street</street_name>
+                <barangay>San Juan</barangay>
+                <years_living_in_pasig>26</years_living_in_pasig>
+            </address_information>
+            <college_school_information>
+                <name_of_school>Ateneo de Manila University</name_of_school>
+                <school_address>Katipunan, Quezon City</school_address>
+                <course>BS in Law Management</course>
+                <date_of_graduation>2024-06-10</date_of_graduation>
+                <licensure_exam_to_take>Philippine Bar Examination</licensure_exam_to_take>
+                <date_of_bar_exam>2025-09-01</date_of_bar_exam>
+            </college_school_information>
+            <educational_information>
+                <education>
+                    <educ_id>1</educ_id>
+                    <academic_level_type>College</academic_level_type>
+                    <name_of_school>Ateneo de Manila University</name_of_school>
+                    <inclusive_years>2020-2024</inclusive_years>
+                    <honors_and_awards>Magna Cum Laude</honors_and_awards>
+                </education>
+            </educational_information>
+            <requirements>
+                <requirement>
+                    <requirement_id>1</requirement_id>
+                    <requirement_name>Transcript of Record</requirement_name>
+                    <attachment>transcript_isabel.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>2</requirement_id>
+                    <requirement_name>Official Certificate of Graduation or Diploma</requirement_name>
+                    <attachment>diploma_isabel.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>3</requirement_id>
+                    <requirement_name>Endorsement Letter from the College Dean</requirement_name>
+                    <attachment>dean_letter_isabel.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>4</requirement_id>
+                    <requirement_name>Certificate of Good Moral Character</requirement_name>
+                    <attachment>good_moral_isabel.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>5</requirement_id>
+                    <requirement_name>Barangay Certification of Residency</requirement_name>
+                    <attachment>barangay_cert_isabel.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>6</requirement_id>
+                    <requirement_name>Notice of Admission (NOA) issued by PRC / Supreme Court</requirement_name>
+                    <attachment>noa_isabel.pdf</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>7</requirement_id>
+                    <requirement_name>1x1 Photo</requirement_name>
+                    <attachment>photo_isabel.jpg</attachment>
+                </requirement>
+                <requirement>
+                    <requirement_id>8</requirement_id>
+                    <requirement_name>Application Form</requirement_name>
+                    <attachment>application_form_isabel.pdf</attachment>
+                </requirement>
+            </requirements>
+            <date_submitted>2025-04-18</date_submitted>
+            <reviewed_by>Nicia Perez</reviewed_by>
+            <date_reviewed>2025-04-18</date_reviewed>
+            <status>Approved</status>
+        </bar_and_board>
+    </application>
+</applications>

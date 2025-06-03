@@ -1,0 +1,9 @@
+<!ELEMENT users (user+)>
+<!ELEMENT user (first_name, last_name, birthday, gender, email, mobile_number, password)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT birthday (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT mobile_number (#PCDATA)>
+<!ELEMENT password (#PCDATA)>

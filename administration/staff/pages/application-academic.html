@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administration</title>
+    <link rel="icon" href="../src/favicons/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/nav-header-style.css" />
+    <link rel="stylesheet" href="../css/academic-application.css" />
+    <link rel="stylesheet" href="../css/notification.css" />
+  </head>
+  <body>
+    <div id="body-pd">
+      <!-- header section -->
+      <header class="header" id="header">
+        <div class="header-title">
+          <img
+            class="header-logo"
+            src="../asset/pasiglogo.png"
+            alt="Pasig Logo"
+          />
+          <h3 class="text-white">Administration</h3>
+        </div>
+        <div class="user-profile">
+          <div class="bell-icon-wrapper position-relative">
+            <i class="bx bxs-bell notif-icon" id="notifBell"></i>
+
+            <!-- Notification Dropdown -->
+            <div id="notifDropdown" class="notifications-dropdown d-none">
+              
+              <!-- Header -->
+              <div class="notif-header">
+                Notifications
+              </div>
+
+              <!-- Notification: Pending Application -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-time"></i></div>
+                <div class="content">
+                  <p class="title">Pending Applications</p>
+                  <p class="message">
+                    The application for <strong>Academic Scholarship</strong> currently has 
+                    <strong class="text-warning fw-bold">21</strong> pending applications. Please review and take action.
+                  </p>
+                  <span class="time">Just now</span>
+                </div>
+              </div>
+
+              <!-- Notification: Account Created -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-user-plus"></i></div>
+                <div class="content">
+                  <p class="title">New Account Created</p>
+                  <p class="message">
+                    A new user account has been created for <strong class="text-primary fw-bold">Jarius Maui Pineda</strong> with the role <strong>Stuff</strong>.
+                  </p>
+                  <span class="time">4h ago</span>
+                </div>
+              </div>
+
+              <!-- Notification: Backup Successful -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-download"></i></div>
+                <div class="content">
+                  <p class="title">System Backup</p>
+                  <p class="message">
+                    The database backup was completed <span class="text-success fw-bold">successfully</span> at 02:00 PM today.
+                  </p>
+                  <span class="time">1h ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-info">
+            <span class="user-name text-white">Staff</span>
+          </div>
+          <div class="user-icon-wrapper">
+            <i class="bx bx-user user-icon"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- navigation section -->
+      <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+          <div>
+            <a href="#" class="nav_logo">
+              <i class="bx bx-menu nav_logo-icon" id="header-toggle"></i>
+            </a>
+            <div class="nav_list">
+              <a href="#" class="nav_link" id="dashboard-link">
+                <i class="bx bx-home nav_icon"></i>
+                <span class="nav_name">Dashboard</span>
+              </a>
+              <a
+                class="nav_link"
+                href="#submenuReport"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="true"
+                aria-controls="submenuReport"
+              >
+                <i class="bx bx-file nav_icon"></i>
+                <span class="nav_name"
+                  >Application <i class="bx bxs-right-arrow"></i
+                ></span>
+              </a>
+              <div class="collapse sub-menu show">
+                <a
+                  href="#"
+                  class="nav_link active"
+                  id="academic-application-link"
+                >
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Academic Scholarships"
+                    >Academic Scholarships</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="private-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="Private School-Endorsed Scholarship"
+                    >Private School-Endorsed Scholarship</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="sports-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Sports Scholarships"
+                    >Sports Scholarship</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="barboard-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="Financial Assistance for Bar & Board Licensure "
+                    >Financial Assistance for Bar & Board Licensure
+                  </span>
+                </a>
+                <a href="#" class="nav_link" id="honor-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="Incentives for College Honor Graduates"
+                    >Incentives for College Honor Graduates</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="sk-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="Sangguniang Kabataan Officials Scholarship"
+                    >Sangguniang Kabataan Officials Scholarship</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="osl-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title=" Out-of-School Learners Scholarship"
+                    >Out-of-School Learners Scholarship</span
+                  >
+                </a>
+                <a href="#" class="nav_link" id="chipin-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span
+                    class="nav_name"
+                    title="CHIP-in (Continuing High School Program for Education) Scholarship"
+                    >CHIP-in (Continuing High School Program for Education)
+                    Scholarship</span
+                  >
+                </a>
+              </div>
+            </div>
+            <a href="#" id="report-link" class="nav_link">
+              <i class="bx bxs-report"></i>
+              <span class="nav_name">Report</span>
+            </a>
+          </div>
+          <a href="#" id="logout-link" class="nav_link">
+            <i class="bx bx-log-out nav_icon"></i>
+            <span class="nav_name">Logout</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- application Section -->
+      <div class="content-section mt-5" id="applicationList"></div>
+
+      <!-- Application View Details -->
+      <div class="content-section mt-5 d-none" id="applicationDetails">
+        <h2 class="section-title fw-bold fs-2">
+          Application Details
+          <button id="backToList" class="btn btn-custom float-end">
+            <i class="bi bi-arrow-left"></i> Back
+          </button>
+        </h2>
+        <div class="bg-white p-4 rounded shadow-lg border-top border-primary">
+          <h4 class="fw-bold mt-3 mb-3 border-bottom border-primary">
+            Personal Information
+          </h4>
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <strong>Application Category:</strong>
+              <span id="detail-application-category"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Applicant ID:</strong>
+              <span id="detail-applicant-id"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Affiliation:</strong>
+              <span id="detail-affiliation"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Type of ID:</strong> <span id="detail-type-of-id"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>ID Number:</strong> <span id="detail-id-number"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>GWA:</strong> <span id="detail-gwa"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Full Name:</strong> <span id="detail-full-name"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Gender:</strong> <span id="detail-gender"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Date of Birth:</strong>
+              <span id="detail-date-of-birth"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Place of Birth:</strong>
+              <span id="detail-place-of-birth"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Age:</strong> <span id="detail-age"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Religion:</strong> <span id="detail-religion"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Civil Status:</strong>
+              <span id="detail-civil-status"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Mobile Number:</strong>
+              <span id="detail-mobile-number"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Email Address:</strong>
+              <span id="detail-email-address"></span>
+            </div>
+          </div>
+
+          <h4 class="fw-bold mt-4">Address Information</h4>
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <strong>Unit Number:</strong>
+              <span id="detail-unit-number"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>House Number:</strong>
+              <span id="detail-house-number"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Street Name:</strong>
+              <span id="detail-street-name"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Barangay:</strong> <span id="detail-barangay"></span>
+            </div>
+          </div>
+
+          <h4 class="fw-bold mt-4">School Information</h4>
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <strong>School Year:</strong>
+              <span id="detail-school-year"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Semester:</strong> <span id="detail-semester"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Name of School:</strong>
+              <span id="detail-school-name"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>School Address:</strong>
+              <span id="detail-school-address"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>School Type:</strong>
+              <span id="detail-school-type"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Academic Grade Level:</strong>
+              <span id="detail-academic-grade-level"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Course:</strong> <span id="detail-course"></span>
+            </div>
+            <div class="col-md-6 mb-2">
+              <strong>Expected Date of Graduation:</strong>
+              <span id="detail-expected-grad-date"></span>
+            </div>
+          </div>
+
+          <h4 class="fw-bold mt-4">Family Information</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-light">
+                <tr>
+                  <th>Relation</th>
+                  <th>First Name</th>
+                  <th>Middle Name</th>
+                  <th>Last Name</th>
+                  <th>Occupation</th>
+                  <th>Monthly Income</th>
+                </tr>
+              </thead>
+              <tbody id="family-info-body">
+                <!-- Rows will be dynamically added here -->
+              </tbody>
+            </table>
+            <div class="col-md-6 mb-2">
+              <strong>Combined Monthly Income:</strong>
+              <span id="combined-monthly-income"></span>
+            </div>
+          </div>
+
+          <h4 class="fw-bold mt-4">Educational Background</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-light">
+                <tr>
+                  <th>Academic Level Type</th>
+                  <th>Name of School</th>
+                  <th>Inclusive Years</th>
+                  <th>Honors and Awards</th>
+                </tr>
+              </thead>
+              <tbody id="educ-info-body">
+                <!-- Rows will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="fw-bold mt-4">Requirements</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-light">
+                <tr>
+                  <th>Requirement Name</th>
+                  <th>Attachment</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="requirements-body">
+                <!-- Rows will be dynamically added here -->
+              </tbody>
+          </table>
+          </div>
+
+          <h4 class="fw-bold mt-4">Application Review</h4>
+          <div class="row mt-3">
+            <div class="col-md-4 mb-3">
+              <label for="approvedBy" class="form-label fw-semibold">Reviewed By <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="approvedBy" placeholder="Enter name of approver">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="approvalDate" class="form-label fw-semibold">Date Reviewed <span class="text-danger">*</span></label>
+              <input type="date" class="form-control" id="approvalDate">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="applicationStatus" class="form-label fw-semibold">Application Status <span class="text-danger">*</span></label>
+              <select id="applicationStatus" class="form-select">
+                <option value="pending">Pending</option>
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mb-3 d-none" id="rejectionReasonContainer">
+              <label for="rejectionReason" class="form-label fw-semibold">Reason for Rejection <span class="text-danger">*</span></label>
+              <textarea id="rejectionReason" class="form-control" rows="3" placeholder="Enter reason for rejection"></textarea>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-4 mb-3">
+            <button id="saveChanges" class="btn btn-primary">
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/nav-header-style.js"></script>
+    <script src="../js/application-academic.js"></script>
+    <script src="../js/notification.js"></script>
+  </body>
+</html>

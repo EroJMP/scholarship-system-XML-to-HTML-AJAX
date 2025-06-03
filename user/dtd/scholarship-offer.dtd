@@ -1,0 +1,13 @@
+<!ELEMENT scholarships (scholarship+)>
+<!ELEMENT scholarship (id, title, deadline, availability, description, eligibility, requirements, benefits)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT deadline (#PCDATA)>
+<!ELEMENT availability (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT eligibility (item+)>
+<!ELEMENT requirements (item+)>
+<!ELEMENT item (#PCDATA)>
+<!ELEMENT benefits (coverage, amount)>
+<!ELEMENT coverage (#PCDATA)>
+<!ELEMENT amount (#PCDATA)>

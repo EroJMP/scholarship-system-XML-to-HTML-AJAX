@@ -1,0 +1,108 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+  .navbar-brand strong {
+    color: #1e3a8a !important;
+  }
+
+.hero {
+    background: url('../asset/dashboard-bg.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 380px;
+}
+
+.impact-section {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.footer {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.scholarship-card {
+    border-top: 4px solid;
+}
+
+.academic {
+    border-top-color: #16a34a;
+}
+
+.private {
+    border-top-color: #2563eb;
+}
+
+.sports {
+    border-top-color: #9333ea;
+}
+
+.icon-works{
+    color: #2563eb;
+}
+
+.how-it-works h4{
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.bold-title {
+    font-weight: bolder;
+}
+
+.font-color-title{
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.blue-color{
+  color: #5386f5;
+}
+
+.dark-blue-color{
+  color: #1e3a8a;
+  }
+
+.btn.btn-custom {
+  background-color: #1e3a8a !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.show {
+  background-color: #3253ad !important;
+  color: #fff !important;
+  border-color: #3253ad !important;
+}
+
+.btn-outline-custom{
+  color: #1e3a8a;
+  border: 1px solid #1e3a8a;
+}
+
+.btn-outline-custom:hover {
+  background-color: #1e3a8a; 
+  color: white;
+  border: none;
+}
+
+.border-custom{
+  border-color: #8390b3;
+}
+
+.icons-hit{
+    background-color: #dbe5f3;
+    border-radius: 50%;
+    padding: 20px;
+
+}

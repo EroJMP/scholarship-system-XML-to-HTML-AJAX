@@ -1,0 +1,798 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Administration</title>
+      <link rel="icon" href="../src/favicons/favicon.ico">
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+        rel="stylesheet"
+      />
+      <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="../css/nav-header-style.css" />
+      <link rel="stylesheet" href="../css/settings.css" />
+      <link rel="stylesheet" href="../css/notification.css" />
+    </head>
+
+    <div id="body-pd">
+
+      <!-- header section -->
+      <header class="header" id="header">
+        <div class="header-title">
+          <img class="header-logo" src="../asset/pasiglogo.png" alt="Pasig Logo">
+          <h3 class="text-white"> Administration</h3>
+        </div>
+        <div class="user-profile">
+          <div class="bell-icon-wrapper position-relative">
+            <i class="bx bxs-bell notif-icon" id="notifBell"></i>
+
+            <!-- Notification Dropdown -->
+            <div id="notifDropdown" class="notifications-dropdown d-none">
+              
+              <!-- Header -->
+              <div class="notif-header">
+                Notifications
+              </div>
+
+              <!-- Notification: Pending Application -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-time"></i></div>
+                <div class="content">
+                  <p class="title">Pending Applications</p>
+                  <p class="message">
+                    The application for <strong>Academic Scholarship</strong> currently has 
+                    <strong class="text-warning fw-bold">21</strong> pending applications. Please review and take action.
+                  </p>
+                  <span class="time">Just now</span>
+                </div>
+              </div>
+
+              <!-- Notification: Account Created -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-user-plus"></i></div>
+                <div class="content">
+                  <p class="title">New Account Created</p>
+                  <p class="message">
+                    A new user account has been created for <strong class="text-primary fw-bold">Jarius Maui Pineda</strong> with the role <strong>Stuff</strong>.
+                  </p>
+                  <span class="time">4h ago</span>
+                </div>
+              </div>
+
+              <!-- Notification: Backup Successful -->
+              <div class="notification">
+                <div class="icon"><i class="bx bx-download"></i></div>
+                <div class="content">
+                  <p class="title">System Backup</p>
+                  <p class="message">
+                    The database backup was completed <span class="text-success fw-bold">successfully</span> at 02:00 PM today.
+                  </p>
+                  <span class="time">1h ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-info">
+            <span class="user-name text-white">Admin</span>
+          </div>
+          <div class="user-icon-wrapper">
+            <i class="bx bx-user user-icon"></i>
+          </div>
+        </div>
+      </header>
+    
+      <!-- navigation section -->
+      <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+          <div>
+            <a href="#" class="nav_logo">
+              <i class="bx bx-menu nav_logo-icon" id="header-toggle"></i>
+            </a>
+            <div class="nav_list">
+              <a href="#" class="nav_link" id="dashboard-link">
+                <i class="bx bx-home nav_icon"></i>
+                <span class="nav_name">Dashboard</span>
+              </a>
+              <a
+                class="nav_link"
+                href="#submenuReport"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="submenuReport"
+              >
+              <i class="bx bx-file nav_icon"></i>
+                <span class="nav_name">Application <i class='bx bxs-right-arrow' ></i></span>
+              </a>
+              <div class="collapse sub-menu">
+                <a href="#" class="nav_link" id="academic-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Academic Scholarships">Academic Scholarships</span>
+                </a>
+                <a href="#" class="nav_link" id="private-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Private School-Endorsed Scholarship">Private School-Endorsed Scholarship</span>
+                </a>
+                <a href="#" class="nav_link" id="sports-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Sports Scholarships">Sports Scholarship</span>
+                </a>
+                <a href="#" class="nav_link" id="barboard-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Financial Assistance for Bar & Board Licensure ">Financial Assistance for Bar & Board Licensure </span>
+                </a>
+                <a href="#" class="nav_link" id="honor-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Incentives for College Honor Graduates">Incentives for College Honor Graduates</span>
+                </a>
+                <a href="#" class="nav_link" id="sk-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="Sangguniang Kabataan Officials Scholarship">Sangguniang Kabataan Officials Scholarship</span>
+                </a>
+                <a href="#" class="nav_link" id="osl-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title=" Out-of-School Learners Scholarship">Out-of-School Learners Scholarship</span>
+                </a>
+                <a href="#" class="nav_link" id="chipin-application-link">
+                  <i class="bx bx-list-ul nav_icon"></i>
+                  <span class="nav_name" title="CHIP-in (Continuing High School Program for Education) Scholarship">CHIP-in (Continuing High School Program for Education) Scholarship</span>
+                </a>
+              </div>
+              <a href="#" id="report-link" class="nav_link">
+                <i class='bx bxs-report'></i>
+                <span class="nav_name">Report</span>
+              </a>
+              <a href="#" id="navSettings" class="nav_link active">
+                <i class="bx bx-cog nav_icon"></i>
+                <span class="nav_name active">Settings</span>
+              </a>
+            </div>
+          </div>
+          <a href="#" id="logout-link" class="nav_link">
+            <i class="bx bx-log-out nav_icon"></i>
+            <span class="nav_name">Logout</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- settings section -->
+      <div class="content-section mt-5">
+        <h1>Settings</h1>
+        <div class="tab-">
+          <div class="tab-nav">
+            <button class="active" data-tab="app-settings">Application Settings</button>
+            <button data-tab="announcement">Announcement Settings</button>
+            <button data-tab="audit">Audit Trail</button>
+            <button data-tab="backup-restore">Backup & Restore</button>
+            <button data-tab="account">Account Settings</button>
+          </div>
+  
+          <div class="tab-content" id="backup-restore">
+            <div class="tab-section">
+              <div class="mb-4">
+                <h4 class="fw-semibold mb-2">Backup & Restore</h4>
+                <p class="text-muted mb-0">Toggle applications open/closed and set deadlines for each scholarship category.</p>
+              </div>
+              <div class="backup-section">
+                <h3>Create Backup</h3>
+                <p>Backup your scholarship application data, settings, and announcements.</p>
+                <ul>
+                  <li>All scholarship applications and their statuses</li>
+                  <li>Scholarship category settings</li>
+                  <li>Announcements</li>
+                  <li>System settings</li>
+                </ul>
+                <button class="primary">Create New Backup</button>
+              </div>
+      
+              <div class="backup-section">
+                <h3>Backup History</h3>
+                <p>View and restore from previous backups.</p>
+          
+                <div class="accordion">
+                  <button class="accordion-toggle">
+                    <span class="text-black">Backup from Apr 20, 2025</span>
+                    <p>4:30 PM • 24.5 MB</p>
+                  </button>
+                  <div class="accordion-content">
+                    <div class="info">
+                      <p>Date Created: April 20, 2025 4:30 PM</p>
+                      <p>Size: 24.5 MB</p>
+                      <p>Records: 1,245 records</p>
+                      <p>Status: Completed</p>
+                    </div>
+                    <div class="actions">
+                      <button>Restore System</button>
+                      <button>Download Backup</button>
+                      <button>Delete Backup</button>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="accordion">
+                  <button class="accordion-toggle">
+                    <span class="text-black">Backup from Apr 15, 2025</span>
+                    <p>2:45 PM • 23.8 MB</p>
+                    <i class="bi bi-trash-fill text-danger delete-accordion-btn" 
+                      role="button" 
+                      style="position: absolute; top: 8px; right: 8px; cursor: pointer;"
+                      title="Delete Backup">
+                    </i>
+                  </button>
+                  <div class="accordion-content">
+                    <div class="info">
+                      <p>Date Created: April 15, 2025 2:45 PM</p>
+                      <p>Size: 23.8 MB</p>
+                      <p>Records: 1,135 records</p>
+                      <p>Status: Completed</p>
+                    </div>
+                    <div class="actions">
+                      <button>Restore System</button>
+                      <button>Download Backup</button>
+                      <button>Delete Backup</button>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+            </div>        
+          </div>
+          
+          <!-- Placeholder for other tabs -->
+          <div class="tab-content active" id="app-settings">
+            <div class="tab-section">
+              <div class="d-flex justify-content-between align-items-start mb-4">
+                <div>
+                  <h4 class="fw-semibold mb-2">Manage Application Periods</h4>
+                  <p class="text-muted mb-0">Toggle applications open/closed and set deadlines for each scholarship category.</p>
+                </div>
+                <button class="btn btn-dark save-btn">Save Changes</button>
+              </div>
+
+              <div class="custom-card mb-3 border p-3 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h6 class="mb-0 fw-bold">Academic Scholarships</h6>
+                    <small class="text-muted">Scholarships for students with exceptional academic performance</small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input scholarship-toggle" type="checkbox" checked />
+                  </div>
+                </div>
+                <div class="mb-2"><strong>Application Deadline  <span class="text-danger">*</span></strong></div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control deadline" value="2025-04-30" />
+                  </div>
+                  <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="status text-success fw-medium">Status: Applications Open until April 30, 2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-card mb-3 border p-3 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h6 class="mb-0 fw-bold">Private School-Endorsed Scholarship</h6>
+                    <small class="text-muted">Scholarships endorsed by private educational institutions</small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input scholarship-toggle" type="checkbox" />
+                  </div>
+                </div>
+                <div class="mb-2"><strong>Application Deadline  <span class="text-danger">*</span></strong></div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control deadline" placeholder="Pick a deadline" disabled />
+                  </div>
+                  <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="status text-danger fw-medium">Status: Applications Closed</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-card mb-3 border p-3 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h6 class="mb-0 fw-bold">Sports Scholarships</h6>
+                    <small class="text-muted">Scholarships for students with exceptional athletic abilities</small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input scholarship-toggle" type="checkbox" checked />
+                  </div>
+                </div>
+                <div class="mb-2"><strong>Application Deadline  <span class="text-danger">*</span></strong></div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control deadline" placeholder="Pick a deadline" value="2025-05-30" />
+                  </div>
+                  <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="status text-success fw-medium">Status: Applications Open until May 30, 2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-card mb-3 border p-3 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h6 class="mb-0 fw-bold">Financial Assistance for Bar and Board Licensure</h6>
+                    <small class="text-muted">Support for licensure exam takers</small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input scholarship-toggle" type="checkbox" />
+                  </div>
+                </div>
+                <div class="mb-2"><strong>Application Deadline  <span class="text-danger">*</span></strong></div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control deadline" placeholder="Pick a deadline" disabled />
+                  </div>
+                  <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="status text-danger fw-medium">Status: Applications Closed</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-card mb-3 border p-3 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h6 class="mb-0 fw-bold">Incentives for College Honor Graduates</h6>
+                    <small class="text-muted">Rewards for top graduating students</small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input scholarship-toggle" type="checkbox" checked />
+                  </div>
+                </div>
+                <div class="mb-2"><strong>Application Deadline  <span class="text-danger">*</span></strong></div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control deadline" value="2025-06-15" />
+                  </div>
+                  <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="status text-success fw-medium">Status: Applications Open until June 15, 2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-card mb-3 border p-3 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h6 class="mb-0 fw-bold">Sangguniang Kabataan Officials Scholarship</h6>
+                    <small class="text-muted">Scholarships for youth leaders</small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input scholarship-toggle" type="checkbox" checked />
+                  </div>
+                </div>
+                <div class="mb-2"><strong>Application Deadline  <span class="text-danger">*</span></strong></div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control deadline" value="2025-07-01" />
+                  </div>
+                  <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="status text-success fw-medium">Status: Applications Open until July 1, 2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-card mb-3 border p-3 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h6 class="mb-0 fw-bold">Out-of-School Learners Scholarship</h6>
+                    <small class="text-muted">Support for learners outside formal schooling</small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input scholarship-toggle" type="checkbox" />
+                  </div>
+                </div>
+                <div class="mb-2"><strong>Application Deadline  <span class="text-danger">*</span></strong></div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control deadline" placeholder="Pick a deadline" disabled />
+                  </div>
+                  <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="status text-danger fw-medium">Status: Applications Closed</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-card mb-3 border p-3 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div>
+                    <h6 class="mb-0 fw-bold">CHIP-in (Continuing High School Program for Education) Scholarship</h6>
+                    <small class="text-muted">Support for continuing high school students</small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input scholarship-toggle" type="checkbox" checked />
+                  </div>
+                </div>
+                <div class="mb-2"><strong>Application Deadline  <span class="text-danger">*</span></strong></div>
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <input type="date" class="form-control deadline" value="2025-08-10" />
+                  </div>
+                  <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <span class="status text-success fw-medium">Status: Applications Open until August 10, 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-content" id="announcement">
+            <div class="tab-section" id="announcementSection">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                  <h4 class="fw-semibold mb-2">Announcements</h4>
+                  <p class="text-muted mb-0">Manage announcements to be displayed on the website.</p>
+                </div>
+                <button class="btn btn-dark" id="createBtn">Create Announcement</button>
+              </div>
+
+              <div class="row g-3" id="announcementCards">
+                <!-- Sample Card -->
+                <div class="col-md-3 mb-3" data-id="1">
+                  <div class="card position-relative h-100">
+                    <div class="card-body">
+                      <span class="badge bg-danger mb-2">Deadline</span>
+                      <h5 class="card-title">Deadline Reminder: College Scholarship Applications</h5>
+                      <h6 class="card-subtitle text-muted mb-2"> Submission deadline for scholarship applications is August 15, 2025.</h6>
+                      <p class="card-text d-none">This is a reminder that the deadline for College Scholarship applications is August 15, 2023. All interested applicants are advised to prepare their requirements ahead of time to avoid delays. Documents to be submitted include a duly accomplished application form, recent 2x2 ID photo, latest school ID, certificate of registration or enrollment, and a copy of grades from the previous semester. Applicants must also provide proof of residency within the city, barangay clearance, and a certificate of indigency if applicable. Submission of falsified documents will result in disqualification. Applications can be submitted online through our official portal or in person at the Office of the City Scholarship Program located at 2nd Floor, City Hall Annex Building. The office is open from Monday to Friday, 8:00 AM to 5:00 PM. Please ensure that all scanned documents for online submission are clear and legible. Failure to comply with the requirements or missing documents may delay the processing of your application. Notification of qualified applicants will be posted on the official website and social media pages. For inquiries, you may contact (02) 8123-4567 or email scholarships@pasigcity.gov.ph. We highly encourage all eligible students to apply and take advantage of this opportunity to receive financial support for your education. Let us continue working together to ensure access to quality education for all Pasigueños.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between small text-muted">
+                      <div>Post: May 20, 2025</div>
+                      <div>Expires: Jun 20, 2025</div>
+                    </div>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <i class="bi bi-pencil-square text-primary me-2 edit-btn" role="button"></i>
+                      <i class="bi bi-trash-fill text-danger delete-btn" role="button"></i>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-3 mb-3" data-id="2">
+                  <div class="card position-relative h-100">
+                    <div class="card-body">
+                      <span class="badge bg-success mb-2">Event</span>
+                      <h5 class="card-title">Scholarship Awarding Ceremony</h5>
+                      <h6 class="card-subtitle text-muted mb-2">All approved scholars are invited to attend the Scholarship Awarding Ceremony on September 1, 2023</h6>
+                      <p class="card-text d-none">All approved scholars are invited to attend the Scholarship Awarding Ceremony on September 1, 2023, at the Pasig City Convention Center. Registration starts at 8:00 AM and the program will begin at 9:00 AM. Attendees are advised to wear smart casual attire. The event will be graced by key officials from the City Government and representatives from our partner institutions. Scholars will receive their certificates and scholarship cards during the event. Parents or guardians are welcome to attend. Light snacks and refreshments will be provided. There will also be an orientation on scholarship guidelines, responsibilities of scholars, and updates on new features in the online portal. Attendance is mandatory. Those who cannot attend due to valid reasons are required to coordinate with the scholarship office at least five working days before the event. Let us celebrate this milestone together as we continue to promote academic excellence and inclusive opportunities for all Pasigueño scholars.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between small text-muted">
+                      <div>Post: May 20, 2025</div>
+                      <div>Expires: Jun 20, 2025</div>
+                    </div>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <i class="bi bi-pencil-square text-primary me-2 edit-btn" role="button"></i>
+                      <i class="bi bi-trash-fill text-danger delete-btn" role="button"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mb-3" data-id="3">
+                  <div class="card position-relative h-100">
+                    <div class="card-body">
+                      <span class="badge bg-secondary mb-2">General</span>
+                      <h5 class="card-title">New Educational Assistance Program</h5>
+                      <h6 class="card-subtitle text-muted mb-2">The City Government of Pasig is proud to announce a new Educational Assistance Program</h6>
+                      <p class="card-text d-none">The City Government of Pasig is proud to announce the launch of a new Educational Assistance Program aimed at supporting students from low-income families. This program will provide financial aid to help cover school-related expenses such as transportation, school supplies, and internet connectivity. Qualified beneficiaries will receive a monthly allowance depending on their level of study—elementary, high school, or college. Priority will be given to those residing in underserved barangays. Interested applicants must submit proof of income, a barangay endorsement, a certified copy of grades, and a personal letter of intent explaining how this assistance will help their studies. Applications will be accepted starting May 1, 2025. Orientation seminars will be conducted in various barangays to inform families about the program and how to apply. This initiative reflects our continued commitment to closing the education gap and ensuring no Pasigueño student is left behind due to financial hardship.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between small text-muted">
+                      <div>Post: May 20, 2025</div>
+                      <div>Expires: Jun 20, 2025</div>
+                    </div>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <i class="bi bi-pencil-square text-primary me-2 edit-btn" role="button"></i>
+                      <i class="bi bi-trash-fill text-danger delete-btn" role="button"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 mb-3" data-id="4">
+                  <div class="card position-relative h-100">
+                    <div class="card-body">
+                      <span class="badge bg-warning mb-2">Important</span>
+                      <h5 class="card-title">Scholarship Renewal Notice for Ongoing Scholars</h5>
+                      <h6 class="card-subtitle text-muted mb-2">The City Government of Pasig is proud to announce a new Educational Assistance Program</h6>
+                      <p class="card-text d-none">All current scholars are reminded to renew their scholarship status before the upcoming semester. Renewal requirements include submission of updated grades, current enrollment certificate, and a short performance evaluation signed by a school official. The deadline for submission is July 31, 2025. Scholars must maintain the required General Weighted Average (GWA) to remain eligible. Those who fall below the minimum GWA will be placed under probation or may lose their scholarship privileges depending on the number of offenses and reasons cited. Justification letters may be submitted for evaluation in case of special circumstances. Renewals may be submitted online or in person. Ensure your documents are complete and accurate to avoid processing delays. The scholarship office will not accept late or incomplete submissions. Updates on the status of your renewal will be sent via email. For assistance, please visit our website or call our hotline. Let us all remain committed to academic excellence and responsibility. Your performance and dedication make this program successful for generations to come.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between small text-muted">
+                      <div>Post: May 20, 2025</div>
+                      <div>Expires: Jun 20, 2025</div>
+                    </div>
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <i class="bi bi-pencil-square text-primary me-2 edit-btn" role="button"></i>
+                      <i class="bi bi-trash-fill text-danger delete-btn" role="button"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Create/Edit Form Section -->
+            <div id="createAnnouncementSection" class="d-none">
+              <div class="tab-section" id="announcementSection">
+                <div class="mb-4">
+                  <h4 class="fw-semibold mb-2">Create Announcement</h4>
+                  <p class="text-muted mb0">Create announcements to be displayed on the website.</p>
+                </div>
+                <form id="announcementForm">
+                  <input type="hidden" id="editIndex" value="">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label">Announcement Type <span class="text-danger">*</span></label>
+                      <select class="form-select" id="type" required>
+                        <option value="">Select type</option>
+                        <option value="general">General</option>
+                        <option value="important">Important</option>
+                        <option value="deadline">Deadline</option>
+                        <option value="event">Event</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Title <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="title" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Subject <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="subject">
+                    </div>
+                    <div class="col-md-3">
+                      <label class="form-label">Post Date <span class="text-danger">*</span></label>
+                      <input type="date" class="form-control" id="postDate" required>
+                    </div>
+                    <div class="col-md-3">
+                      <label class="form-label">Expiry Date <span class="text-danger">*</span></label>
+                      <input type="date" class="form-control" id="expiryDate" required>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Content <span class="text-danger">*</span></label>
+                      <textarea class="form-control" id="content" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-dark">Create</button>
+                      <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="audit">
+            <div class="tab-section">
+              <div class="audit-trail-wrapper">
+                <h4 class="section-title">Audit Trail</h4>
+                <p class="section-subtitle">View system activities and user actions.</p>
+
+                <div class="audit-entry">
+                  <div class="entry-header">
+                    <strong>Login</strong>
+                    <span class="entry-date">Apr 25, 2025 10:30 AM</span>
+                  </div>
+                  <div class="entry-user">admin@scholarships.org</div>
+                  <div class="entry-description">User logged in successfully</div>
+                </div>
+
+                <div class="audit-entry">
+                  <div class="entry-header">
+                    <strong>Application Status Change</strong>
+                    <span class="entry-date">Apr 25, 2025 11:15 AM</span>
+                  </div>
+                  <div class="entry-user">admin@scholarships.org</div>
+                  <div class="entry-description">Changed application #A12345 status from 'Pending' to 'Approved'</div>
+                </div>
+
+                <div class="audit-entry">
+                  <div class="entry-header">
+                    <strong>Settings Update</strong>
+                    <span class="entry-date">Apr 25, 2025 11:45 AM</span>
+                  </div>
+                  <div class="entry-user">admin@scholarships.org</div>
+                  <div class="entry-description">Updated application deadline for 'Academic Scholarships'</div>
+                </div>
+
+                <div class="audit-entry">
+                  <div class="entry-header">
+                    <strong>Announcement Creation</strong>
+                    <span class="entry-date">Apr 24, 2025 2:10 PM</span>
+                  </div>
+                  <div class="entry-user">admin@scholarships.org</div>
+                  <div class="entry-description">Created new announcement: 'Deadline Extension for Academic Scholarships'</div>
+                </div>
+
+                <div class="audit-entry">
+                  <div class="entry-header">
+                    <strong>Login</strong>
+                    <span class="entry-date">Apr 25, 2025 10:30 AM</span>
+                  </div>
+                  <div class="entry-user">admin@scholarships.org</div>
+                  <div class="entry-description">User logged in successfully</div>
+                </div>
+
+                <div class="audit-entry">
+                  <div class="entry-header">
+                    <strong>Application Status Change</strong>
+                    <span class="entry-date">Apr 25, 2025 11:15 AM</span>
+                  </div>
+                  <div class="entry-user">admin@scholarships.org</div>
+                  <div class="entry-description">Changed application #A12345 status from 'Pending' to 'Approved'</div>
+                </div>
+
+                <div class="audit-entry">
+                  <div class="entry-header">
+                    <strong>Settings Update</strong>
+                    <span class="entry-date">Apr 25, 2025 11:45 AM</span>
+                  </div>
+                  <div class="entry-user">admin@scholarships.org</div>
+                  <div class="entry-description">Updated application deadline for 'Academic Scholarships'</div>
+                </div>
+
+                <div class="audit-entry">
+                  <div class="entry-header">
+                    <strong>Announcement Creation</strong>
+                    <span class="entry-date">Apr 24, 2025 2:10 PM</span>
+                  </div>
+                  <div class="entry-user">admin@scholarships.org</div>
+                  <div class="entry-description">Created new announcement: 'Deadline Extension for Academic Scholarships'</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="account">
+            <div class="tab-section">
+              <div class="mb-4">
+                <h4 class="fw-semibold text-black mb-2">Account Settings</h4>
+                <p class="text-muted mb0">Create announcements to be displayed on the website.</p>
+              
+              <!-- Tabs inside Account Settings -->
+                <div class="account-subtabs">
+                  <button class="subtab active" data-tab="myAccount"><i class="bi bi-person-fill"></i> My Account</button>
+                  <button class="subtab" data-tab="accountManager"><i class="bi bi-people-fill"></i> Accounts Manager</button>
+                </div>
+              </div>
+
+              <!-- My Account Tab -->
+              <div class="tab-pane active" id="myAccount">
+                <div class="account-info-box">
+                  <h3>Account Information</h3>
+                  <div class="info-row">
+                    <div>
+                      <label>Username</label>
+                      <p>admin@scholarships.org</p>
+                    </div>
+                    <div>
+                      <label>Role</label>
+                      <p>Administrator</p>
+                    </div>
+                  </div>
+                  <div class="info-row">
+                    <div>
+                      <label>Last Login</label>
+                      <p>April 25, 2025 at 9:30 AM</p>
+                    </div>
+                    <div>
+                      <label>Account Created</label>
+                      <p>January 15, 2025</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="change-password-box">
+                  <h3>Change Password</h3>
+
+                  <label>Current Password <span class="text-danger">*</span></label>
+                  <input type="password" id="currentPassword" />
+
+                  <label>New Password <span class="text-danger">*</span></label>
+                  <input type="password" id="newPassword" />
+                  <p class="password-hint">
+                    Must be at least 8 characters and include uppercase, lowercase, special character, and a number.
+                  </p>
+
+                  <label>Confirm New Password <span class="text-danger">*</span></label>
+                  <input type="password" id="confirmPassword" />
+
+                  <button class="btn-primary" id="changePasswordBtn">Change Password</button>
+                </div>
+              </div>
+
+              <!-- Accounts Manager Tab -->
+              <div class="tab-pane" id="accountManager">
+                <div class="create-account-box">
+                  <h3>Create New Account</h3>
+
+                  <label>Email Address <span class="text-danger">*</span></label>
+                  <input type="email" id="accountEmail" placeholder="user@example.com" />
+
+                  <label>Role <span class="text-danger">*</span></label>
+                  <select id="accountRole">
+                    <option value="">Select role</option>
+                    <option>Staff</option>
+                    <option>Administrator</option>
+                  </select>
+
+                  <label>Password <span class="text-danger">*</span></label>
+                  <input type="password" id="accountPassword" />
+                  <p class="password-hint">Must be at least 8 characters and include uppercase, lowercase, and a number.</p>
+
+                  <label>Confirm Password <span class="text-danger">*</span></label>
+                  <input type="password" id="accountConfirmPassword" />
+
+                  <button class="btn-primary" id="createAccountBtn">Create Account</button>
+                </div>
+
+                <div class="account-list">
+                  <div class="card mb-3 position-relative">
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm btn-outline-danger" title="Delete">
+                        <i class="bi bi-trash"></i>
+                      </button>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text mb-1 fw-bold">staff@scholarships.org</p>
+                      <p class="card-text mb-1 small">staff</p>
+                      <p class="card-text"><small class="text-muted">Created: January 15, 2025</small></p>
+                    </div>
+                  </div>
+                  <div class="card mb-3 position-relative">
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm btn-outline-danger" title="Delete">
+                        <i class="bi bi-trash"></i>
+                      </button>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text mb-1 fw-bold">admin@scholarships.org</p>
+                      <p class="card-text mb-1 small">admin</p>
+                      <p class="card-text"><small class="text-muted">Created: January 15, 2025</small></p>
+                    </div>
+                  </div>
+                  <div class="card mb-3 position-relative">
+                    <div class="position-absolute top-0 end-0 p-2">
+                      <button class="btn btn-sm btn-outline-danger" title="Delete">
+                        <i class="bi bi-trash"></i>
+                      </button>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text mb-1 fw-bold">staff@scholarships.org</p>
+                      <p class="card-text mb-1 small">staff</p>
+                      <p class="card-text"><small class="text-muted">Created: January 15, 2025</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="../js/nav-header-style.js"></script>
+      <script src="../js/settings.js"></script>
+      <script src="../js/notification.js"></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function(){
+            emailjs.init({
+              publicKey: "wzXgijBftES2PKfLj",
+            });
+        })();
+      </script>
+    </body>
+  </html>

@@ -1,0 +1,65 @@
+body {
+    font-family: 'Inter', sans-serif;
+  }
+
+.navbar-brand strong {
+  color: #1e3a8a !important;
+}
+
+
+.announcement-card {
+  background-color: white;
+}
+
+.announcement-card h5 {
+  margin-bottom: 0.5rem;
+}
+
+.announcement-card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.font-color-title{
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.blue-color{
+  color: #5386f5;
+}
+
+.dark-blue-color{
+  color: #1e3a8a;
+  }
+
+.btn-custom {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+background-color: #3253ad;
+}
+
+.btn-outline-custom{
+  color: #1e3a8a;
+  border: 1px solid #1e3a8a;
+}
+
+.btn-outline-custom:hover {
+  background-color: #1e3a8a; 
+  color: white;
+  border: none;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+           elementFormDefault="qualified"
+           vc:minVersion="1.1">
+
+  <!-- Root element -->
+  <xs:element name="users">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="user" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="first_name" type="xs:string"/>
+              <xs:element name="last_name" type="xs:string"/>
+              <xs:element name="birthday" type="xs:date"/>
+              <xs:element name="gender" type="xs:string"/>
+              <xs:element name="email" type="xs:string"/>
+              <xs:element name="mobile_number" type="xs:string"/>
+              <xs:element name="password" type="xs:string"/>
+            </xs:sequence>
+
+            <!-- Assertion: password must be a 64-character hexadecimal hash -->
+            <xs:assert test="matches(password, '^[a-fA-F0-9]{64}$')"/>
+
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

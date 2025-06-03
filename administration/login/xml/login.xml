@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE users SYSTEM "admin-login.dtd">
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../xsd/login.xsd">
+  <user>
+    <username>pineda_jariusmaui@plpasig.edu.ph</username>
+    <password>26ea359d2fbc724d51122e1a5497666641663404457bbc2710f2a9f11005d1de</password> <!-- Pineda_Admin#2025 -->
+    <permission>admin</permission>
+  </user>
+  <user>
+    <username>perez_nicholetricia@plpasig.edu.ph</username>
+    <password>abc898a6759b4e150a62175e94f618bf7ba9af6d3d904e6492cddfda57189592</password> <!-- Perez_Staff#2025 -->
+    <permission>staff</permission>
+  </user>
+  <user>
+    <username>padrigano_czarjewel@plpasig.edu.ph</username>
+    <password>682d4c562f1a1d6367bc0fa536f6614dd7f91fcc8af9a1236d67cda27e269a51</password> <!-- Staff_Padrigano#2025 -->
+    <permission>staff</permission>
+  </user>
+</users>
