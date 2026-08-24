@@ -1,5 +1,17 @@
+const OTP_ENABLED = false;
+
 let verificationCode = "";
 let userPermission = "";
+
+function redirectAfterLogin() {
+  if (userPermission === "admin") {
+    window.location.href = "../../admin/pages/dashboard.html";
+  } else if (userPermission === "staff") {
+    window.location.href = "../../staff/pages/dashboard.html";
+  } else {
+    Swal.fire("Error", "Unrecognized permission level.", "error");
+  }
+}
 
 async function hashPassword(password) {
   const encoder = new TextEncoder();
@@ -76,6 +88,13 @@ document.getElementById("loginForm").addEventListener("submit", async function (
 
     localStorage.removeItem(`attempts_${enteredUsername}`);
 
+    if (!OTP_ENABLED) {
+      Swal.fire("Success", "Login successful.", "success").then(() => {
+        redirectAfterLogin();
+      });
+      return;
+    }
+
     verificationCode = Math.floor(100000 + Math.random() * 900000).toString();
 
     await emailjs.send("service_l53qafo", "template_mzv1dvi", {
@@ -124,13 +143,7 @@ document.getElementById("verifyCodeBtn").addEventListener("click", function () {
         localStorage.removeItem(lockKey);
 
         Swal.fire("Verified", "Code verified successfully!", "success").then(() => {
-            if (userPermission === "admin") {
-                window.location.href = "../../admin/pages/dashboard.html";
-            } else if (userPermission === "staff") {
-                window.location.href = "../../staff/pages/dashboard.html";
-            } else {
-                Swal.fire("Error", "Unrecognized permission level.", "error");
-            }
+            redirectAfterLogin();
         });
     } else {
         let attempts = parseInt(localStorage.getItem(attemptKey)) || 0;
@@ -174,3 +187,36 @@ function togglePasswordVisibility(passwordFieldId, checkboxId) {
   const checkbox = document.getElementById(checkboxId);
   passwordInput.type = checkbox.checked ? "text" : "password";
 }
+
+function initDemoAccounts(emailFieldId) {
+  const wrap = document.querySelector(".demo-accounts");
+  if (!wrap) return;
+
+  const trigger = wrap.querySelector(".demo-accounts-trigger");
+  const emailInput = document.getElementById(emailFieldId);
+  const passwordInput = document.getElementById("password");
+
+  trigger.addEventListener("click", function (e) {
+    e.preventDefault();
+    const open = wrap.classList.toggle("is-open");
+    trigger.setAttribute("aria-expanded", String(open));
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!wrap.contains(e.target)) {
+      wrap.classList.remove("is-open");
+      trigger.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  wrap.querySelectorAll(".demo-account-row").forEach(function (row) {
+    row.addEventListener("click", function () {
+      emailInput.value = row.dataset.email;
+      passwordInput.value = row.dataset.password;
+      wrap.classList.remove("is-open");
+      trigger.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+initDemoAccounts("username");

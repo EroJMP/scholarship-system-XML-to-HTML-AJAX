@@ -1,13 +1,17 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: url('../asset/login-bg.png') no-repeat center center;
   background-size: cover;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #emailSection, #verificationSection, #newPassSection {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -10,7 +10,19 @@ body {
     background: url('../asset/dashboard-bg.png') no-repeat center center/cover;
     color: white;
     text-align: center;
+    min-height: 240px;
+    height: auto;
+    padding: 48px 16px;
+}
+
+@media (min-width: 768px) {
+  .hero {
     height: 380px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .impact-section {

@@ -73,7 +73,28 @@
 }
 
 .search-input {
-    min-width: 400px;
+    min-width: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 767.98px) {
+  .content-section {
+    padding: 12px;
+  }
+
+  .form-select {
+    width: 100%;
+  }
+
+  .search-input {
+    max-width: none;
+  }
+
+  .d-flex.justify-content-between {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
 }
       
 .export-btn {
@@ -90,4 +111,9 @@
 
 .pointer-events-none {
   pointer-events: none;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
 }

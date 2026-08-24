@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const OTP_ENABLED = false;
+
     const loginForm = document.querySelector("form");
     const emailInput = document.getElementById("email");
     const passwordInput = document.getElementById("password");
@@ -18,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let attemptsLeft = maxAttempts;
     let locked = false;
 
-    emailjs.init("wzXgijBftES2PKfLj");
+    if (OTP_ENABLED && typeof emailjs !== "undefined") {
+        emailjs.init("wzXgijBftES2PKfLj");
+    }
 
     toggleBtn.addEventListener("click", function () {
         const isPasswordHidden = passwordInput.type === "password";
@@ -85,6 +89,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     attemptCount = 0;
                     attemptsLeft = maxAttempts;
                     locked = false;
+
+                    if (!OTP_ENABLED) {
+                        Swal.fire({
+                            icon: "success",
+                            title: "Login Successful",
+                            text: "Welcome back.",
+                        }).then(() => {
+                            window.location.href = "user-dashboard-empty.html";
+                        });
+                        return;
+                    }
 
                     const userEmail = matchedUser.getElementsByTagName("email")[0].textContent;
                     const verificationCode = generateRandomCode();
@@ -234,5 +249,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("Verification code sent via EmailJS");
             });
     }
+
+    (function initDemoAccounts() {
+        const wrap = document.querySelector(".demo-accounts");
+        if (!wrap) return;
+
+        const trigger = wrap.querySelector(".demo-accounts-trigger");
+        const emailField = document.getElementById("email");
+        const passwordField = document.getElementById("password");
+
+        trigger.addEventListener("click", function (e) {
+            e.preventDefault();
+            const open = wrap.classList.toggle("is-open");
+            trigger.setAttribute("aria-expanded", String(open));
+        });
+
+        document.addEventListener("click", function (e) {
+            if (!wrap.contains(e.target)) {
+                wrap.classList.remove("is-open");
+                trigger.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        wrap.querySelectorAll(".demo-account-row").forEach(function (row) {
+            row.addEventListener("click", function () {
+                emailField.value = row.dataset.email;
+                passwordField.value = row.dataset.password;
+                wrap.classList.remove("is-open");
+                trigger.setAttribute("aria-expanded", "false");
+            });
+        });
+    })();
 });
 

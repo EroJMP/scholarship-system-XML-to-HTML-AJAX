@@ -3,30 +3,12 @@
 <users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="../xsd/user-login.xsd">
   <user>
-    <first_name>Jarius</first_name>
-    <last_name>Pineda</last_name>
-    <birthday>2002-03-05</birthday>
+    <first_name>Demo</first_name>
+    <last_name>Student</last_name>
+    <birthday>2004-06-15</birthday>
     <gender>Male</gender>
-    <email>pineda_jariusmaui@plpasig.edu.ph</email>
-    <mobile_number>09456123023</mobile_number>
-    <password>54bceed86d6e996fbb08743ea49e019f471ad2dbf65ef28b8a0ee0eb41b0e746</password> <!-- Pineda_Jarius#2025 -->
-  </user>
-  <user>
-    <first_name>Nichole Tricia</first_name>
-    <last_name>Perez</last_name>
-    <birthday>2004-06-11</birthday>
-    <gender>Female</gender>
-    <email>perez_nicholetricia@plpasig.edu.ph</email>
-    <mobile_number>09312654789</mobile_number>
-    <password>766535105af81dd2078506e16b2dc7a86f8759a4fe7e687e36463d6614f95f7d</password> <!-- Perez_Apply#2004 -->
-  </user>
-  <user>
-    <first_name>Czar Jewel</first_name>
-    <last_name>Padrigano</last_name>
-    <birthday>2004-06-11</birthday>
-    <gender>Male</gender>
-    <email>padrigano_czarjewel@plpasig.edu.ph</email>
-    <mobile_number>09312654789</mobile_number>
-    <password>9ea3f6cc86bcbb4db9efe67977cad4f995cf886b97b90a5ab7c4c6a6e6e79d08</password> <!-- Padrigano#2025 -->
+    <email>student@plpasig.edu.ph</email>
+    <mobile_number>09171234567</mobile_number>
+    <password>e8302be67ed93e969d1d21ccbe5445ffe4cf59ce079dde7060093ccf38151668</password> <!-- Student#2025 -->
   </user>
 </users>

@@ -34,6 +34,10 @@
         <h2 class="text-primary text-center fw-bolder">PASIG CITY SCHOLARSHIP ADMINISTRATION</h2>
         <hr class="divider" />
         <h4 class="text-center mb-4 fw-semibold">Login</h4>
+        <div class="role-switch">
+          <a class="role-switch-link" href="../../../user/pages/user-login.html">Login as student</a>
+          <a class="role-switch-link is-active" href="login.html">Login as admin</a>
+        </div>
 
         <form id="loginForm" class="w-100" style="max-width: 320px;">
           <div class="mb-3">
@@ -54,6 +58,25 @@
             Login
           </button>
         </form>
+
+        <div class="demo-accounts" id="demoAccounts">
+          <button type="button" class="demo-accounts-trigger" aria-expanded="false" aria-controls="demoAccountsPanel">
+            Demo accounts
+          </button>
+          <div class="demo-accounts-panel" id="demoAccountsPanel" role="tooltip">
+            <p class="demo-accounts-hint">Hover or click to view. Click an account to fill the form.</p>
+            <button type="button" class="demo-account-row" data-email="admin@plpasig.edu.ph" data-password="Admin#2025">
+              <span class="demo-account-role">Admin</span>
+              <span class="demo-account-email">admin@plpasig.edu.ph</span>
+              <span class="demo-account-password">Admin#2025</span>
+            </button>
+            <button type="button" class="demo-account-row" data-email="staff@plpasig.edu.ph" data-password="Staff#2025">
+              <span class="demo-account-role">Staff</span>
+              <span class="demo-account-email">staff@plpasig.edu.ph</span>
+              <span class="demo-account-password">Staff#2025</span>
+            </button>
+          </div>
+        </div>
       </div>
 
       <!-- Verification Section -->

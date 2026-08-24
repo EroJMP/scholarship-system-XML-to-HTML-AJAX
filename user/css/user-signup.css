@@ -1,11 +1,16 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
 font-family: 'Inter', sans-serif;
 background: url('../asset/login-bg.png') no-repeat center center;
 background-size: cover;
-height: 100vh;
+min-height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
+padding: 1rem;
 }
 .card {
 width: 100%;
@@ -55,6 +60,21 @@ box-shadow: none;
 .form-check{
     padding-left: 50px;
     font-size: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .card {
+    padding: 1.25rem;
+  }
+
+  .logo-container img {
+    height: 84px;
+  }
+
+  .form-check {
+    padding-left: 1.75rem;
+    font-size: 14px;
+  }
 }
 
 .form-check-input {

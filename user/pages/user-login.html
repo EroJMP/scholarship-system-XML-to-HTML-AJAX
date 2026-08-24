@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/user-login.css" />
+  <link rel="stylesheet" href="../css/site-responsive.css" />
 </head>
 <body>
 
@@ -18,6 +19,10 @@
         <img class="logopasigpcs" src="../asset/logopicture.png" alt="Pasig Logo" />
       </div>
       <h6 class="text-primary fw-bold mb-3">PASIG CITY SCHOLARSHIP PORTAL</h6>
+      <div class="role-switch">
+        <a class="role-switch-link is-active" href="user-login.html">Login as student</a>
+        <a class="role-switch-link" href="../../administration/login/pages/login.html">Login as admin</a>
+      </div>
       <hr class="divider" />
       <form id="loginForm">
         <div class="mb-3 mt-3 text-start">
@@ -47,6 +52,20 @@
       <div class="mt-3 text-small">
         Don't have an account?
         <a href="user-signup.html" class="text-decoration-none text-primary fw-semibold">Register here!</a>
+      </div>
+
+      <div class="demo-accounts" id="demoAccounts">
+        <button type="button" class="demo-accounts-trigger" aria-expanded="false" aria-controls="demoAccountsPanel">
+          Demo accounts
+        </button>
+        <div class="demo-accounts-panel" id="demoAccountsPanel" role="tooltip">
+          <p class="demo-accounts-hint">Hover or click to view. Click an account to fill the form.</p>
+          <button type="button" class="demo-account-row" data-email="student@plpasig.edu.ph" data-password="Student#2025">
+            <span class="demo-account-role">Student</span>
+            <span class="demo-account-email">student@plpasig.edu.ph</span>
+            <span class="demo-account-password">Student#2025</span>
+          </button>
+        </div>
       </div>
     </div>
   </section>

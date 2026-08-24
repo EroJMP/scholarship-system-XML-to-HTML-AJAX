@@ -5,17 +5,30 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.getElementById("header");
 
   if (toggleButton && navBar && header && body) {
-    navBar.classList.add("show");
-    toggleButton.classList.add("bx-x");
-    body.classList.add("body-pd");
-    header.classList.add("body-pd");
+    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    if (isDesktop) {
+      navBar.classList.add("show");
+      toggleButton.classList.add("bx-x");
+      body.classList.add("body-pd");
+      header.classList.add("body-pd");
+    }
 
-    toggleButton.addEventListener("click", function () {
+    const mobileToggle = document.createElement("button");
+    mobileToggle.type = "button";
+    mobileToggle.className = "mobile-nav-toggle";
+    mobileToggle.setAttribute("aria-label", "Open menu");
+    mobileToggle.innerHTML = '<i class="bx bx-menu"></i>';
+    header.insertBefore(mobileToggle, header.firstChild);
+
+    function toggleNav() {
       navBar.classList.toggle("show");
       toggleButton.classList.toggle("bx-x");
       body.classList.toggle("body-pd");
       header.classList.toggle("body-pd");
-    });
+    }
+
+    toggleButton.addEventListener("click", toggleNav);
+    mobileToggle.addEventListener("click", toggleNav);
   }
 
   const navLinks = document.querySelectorAll(".nav_link");
